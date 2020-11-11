@@ -8,6 +8,16 @@ import Card from "./Card";
 
 
 function App() {
+
+  const getData = async () => {
+    const response = await fetch("https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/Stateparks.JSON");
+    const data = await response.json();
+    console.log(data);
+    return data;
+  };
+
+  getData();
+
   return (
     <div >
 <Navbar />  

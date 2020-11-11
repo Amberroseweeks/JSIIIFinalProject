@@ -1,0 +1,313 @@
+[
+    {
+        "id": 1,
+        "name": "alapocas run state park",
+        "county": "new castle",
+        "address": "1914 w park dr, wilmington, DE 19803",
+        "location": [39.7764093, -75.5452632],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/alapocas/AlapocasHERO.jpg",
+        "activities": [
+            {
+                "activity": "Rock Climbing",
+                "URL": "https://www.destateparks.com/Adventures/RockClimbing"
+            },
+            {
+                "activity": "Hiking",
+                "URL": "https://www.destateparks.com/wwwroot/maps/alapocas-run/AlapocasRunMap.pdf"
+            },
+            {
+                "activity": "Biking",
+                "URL": "https://www.destateparks.com/wwwroot/maps/alapocas-run/AlapocasRunMap.pdf"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Auburn Valley State Park",
+        "county": "new castle",
+        "address": "630 Benge Rd, Hockessin, DE 19707",
+        "location": [39.81868008436779, -75.67861017732277],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/auburnValley/AuburnValleyHero.jpg",
+        "activities": [
+            {
+                "activity": "Fishing",
+                "URL": "https://www.destateparks.com/wwwroot/maps/auburn-valley/AuburnValleyMap.pdf"
+            },
+            {
+                "activity": "Hiking",
+                "URL": "https://www.destateparks.com/wwwroot/maps/auburn-valley/AuburnValleyMap.pdf"
+            },
+            {
+                "activity": "Biking",
+                "URL": "https://www.destateparks.com/wwwroot/maps/auburn-valley/AuburnValleyMap.pdf"
+            },
+            {
+                "activity": "Steam Car Rides",
+                "URL": "https://www.destateparks.com/Contact"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Brandywine Creek State Park",
+        "county": "New Castle",
+        "address": "41 Adams Dam Rd Wilmington, DE",
+        "location": [39.80737292788198, -75.5727788823647],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/brandywineCreek/BrandywineCreek-HERO.jpg",
+        "activities": [
+            {
+                "activity": "Fishing",
+                "URL": "https://www.destateparks.com/wwwroot/maps/brandywine-creek/BrandywineCreekMap.pdf"
+            },
+            {
+                "activity": "Hiking",
+                "URL": "https://www.destateparks.com/wwwroot/maps/brandywine-creek/BrandywineCreekMap.pdf"
+            },
+            {
+                "activity": "Birding",
+                "URL": "https://www.destateparks.com/Adventures/Birding"
+            },
+            {
+                "activity": "Kayaking",
+                "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+            },
+            {
+                "activity": "Canoeing",
+                "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+            },
+            {
+                "activity": "Biking",
+                "URL": "https://www.destateparks.com/wwwroot/maps/brandywine-creek/BrandywineCreekMap.pdf"
+            },
+            {
+                "activity": "Camping",
+                "URL": "https://www.destateparks.com/Reservations/GroupCamping"
+            },
+            {
+                "activity": "Geocaching",
+                "URL": "https://www.destateparks.com/Adventures/Geocaching"
+            }
+
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Bellevue State Park",
+        "county": "New Castle",
+        "address": "800 Carr Rd Wilmington, DE 19809",
+        "location": [39.77689387198082, -75.49277904639335],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/bellevue/Bellevue-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Fishing",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/bellevue/Bellevue_webmap2015.pdf"
+                },
+                {
+                    "activity": "Hiking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/bellevue/Bellevue_webmap2015.pdf"
+                },
+                {
+                    "activity": "Horseback Riding",
+                    "URL": "https://wellspringfarm.us.com/"
+                },
+                {
+                    "activity": "Arboretum",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/bellevue/arboretum.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/bellevue/Bellevue_webmap2015.pdf"
+                },
+                {
+                    "activity": "Geocaching",
+                    "URL": "https://www.destateparks.com/Adventures/Geocaching"
+                }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Cape Henlopen State Park",
+        "county": "Sussex",
+        "address": "15099 Cape Henlopen Dr, Lewes, DE 19958",
+        "location": [38.784302454650714, -75.09828693067753],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/cape/CapeHenlopen-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Fishing",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/cape-henlopen/CapeHenlopenMap.pdf"
+                },
+                {
+                    "activity": "Hiking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/cape-henlopen/CapeHenlopenMap.pdf"
+                },
+                {
+                    "activity": "Beach",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/cape-henlopen/Beach_Plum_Island2017.pdf"
+                },
+                {
+                    "activity": "Canoeing",
+                    "URL": "https://www.questkayak.com/tours"
+                },
+                {
+                    "activity": "Kayaking",
+                    "URL": "https://www.questkayak.com/tours"
+                },
+                {
+                    "activity": "Surf Fishing",
+                    "URL": "https://www.destateparks.com/wwwroot/downloads/brochures/SurfFishingBrochure.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/cape-henlopen/CapeHenlopenMap.pdf"
+                },
+                {
+                    "activity": "Camping",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/cape-henlopen/CapeHenlopenMap.pdf"
+                },
+                {
+                    "activity": "Geocaching",
+                    "URL": "https://www.destateparks.com/Adventures/Geocaching"
+                }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Delaware Seashore State Park",
+        "county": "Sussex",
+        "address": "39415 Inlet Rd, Rehoboth Beach, DE 19971",
+        "location": [38.612985045565274, -75.07171708835344],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/delSeashore/DelawareSeashore-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Fishing",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/delaware-seashore/DelawareSeashore.pdf"
+                },
+                {
+                    "activity": "Hiking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/delaware-seashore/DelawareSeashore.pdf"
+                },
+                {
+                    "activity": "Beach",
+                    "URL": "https://www.destateparks.com/Adventures/Beaches"
+                },
+                {
+                    "activity": "Boating",
+                    "URL": "https://www.destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Hunting",
+                    "URL": "https://www.destateparks.com/Adventures/Hunting"
+                },
+                {
+                    "activity": "Canoeing",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Kayaking",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Surf Fishing",
+                    "URL": "https://www.destateparks.com/wwwroot/downloads/brochures/SurfFishingBrochure.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/delaware-seashore/DelawareSeashore.pdf"
+                },
+                {
+                    "activity": "Camping",
+                    "URL": "https://www.destateparks.com/Reservations/RVandTentCamping"
+                },
+                {
+                    "activity": "Geocaching",
+                    "URL": "https://www.destateparks.com/Adventures/Geocaching"
+                }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Fenwick Island State Park",
+        "county": "Sussex",
+        "address": "DE-1, Fenwick Island, DE 19944",
+        "location": [38.615606850050156, -75.06493011506451],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/fenwick/Fenwick-Hero.jpg",
+        "activities": [
+                {
+                    "activity": "Fishing",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/fenwick-island/FenwickIslandMap.pdf"
+                },
+                {
+                    "activity": "Hiking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/fenwick-island/FenwickIslandMap.pdf"
+                },
+                {
+                    "activity": "Horseback Riding on the Beach",
+                    "URL": "https://www.destateparks.com/Adventures/Beaches"
+                },
+                {
+                    "activity": "Beach",
+                    "URL": "https://www.destateparks.com/Adventures/Beaches"
+                },
+                {
+                    "activity": "Boating",
+                    "URL": "https://www.destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Kayaking",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "First State Heritage Park",
+        "county": "Kent",
+        "address": "102 S State St, Dover, DE 19901",
+        "location": [39.15978563604285, -75.52520689998175],
+        "picture": "https://destateparks.com/wwwroot/images/parks/firstStateHeritage/FirstStateHeritagePark-Hero.jpg",
+        "activities": [
+                {
+                    "activity": "Walking Tour",
+                    "URL": "https://destateparks.com/wwwroot/maps/first-state-heritage/FSHP-ProgramGuideMap-MAP1113.pdf"
+                },
+                {
+                    "activity": "Museums",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/fenwick-island/FenwickIslandMap.pdf"
+                },
+                {
+                    "activity": "Historic Sites",
+                    "URL": "https://destateparks.com/wwwroot/maps/first-state-heritage/FSHP-ProgramGuideMap-MAP1113.pdf"
+                }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Fort Delaware State Park",
+        "county": "Kent",
+        "address": "45 Clinton St, Delaware City, DE 19706",
+        "location": [39.57864936482754, -75.58739918832897],
+        "picture": "https://www.destateparks.com/wwwroot/images/EssentialExp/FDSP/Fort-ExteriorEE.jpg",
+        "activities": [
+                {
+                    "activity": "Ghost Tours",
+                    "URL": "https://delawarestateparks.reserveamerica.com/tourDetails.do?contractCode=DE&tourId=7099"
+                },
+                {
+                    "activity": "History Tours",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/fenwick-island/FenwickIslandMap.pdf"
+                },
+                {
+                    "activity": "Hiking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/fort-delaware/Fort_Delaware2017_Complete.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://www.destateparks.com/wwwroot/maps/fort-delaware/Fort_Delaware2017_Complete.pdf"
+                },
+                {
+                    "activity": "Ferry Ride",
+                    "URL": "https://delawarestateparks.reserveamerica.com/tourParkDetail.do?contractCode=DE&parkId=360113&_ga=2.8874101.1325512546.1605066569-680463194.1605066569"
+                }
+        ]
+    }
+ ]
