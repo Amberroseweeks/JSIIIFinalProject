@@ -225,7 +225,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Fenwick Island State Park",
         "county": "Sussex",
         "address": "DE-1, Fenwick Island, DE 19944",
@@ -259,7 +259,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "First State Heritage Park",
         "county": "Kent",
         "address": "102 S State St, Dover, DE 19901",
@@ -281,9 +281,9 @@
         ]
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Fort Delaware State Park",
-        "county": "Kent",
+        "county": "New Castle",
         "address": "45 Clinton St, Delaware City, DE 19706",
         "location": [39.57864936482754, -75.58739918832897],
         "picture": "https://www.destateparks.com/wwwroot/images/EssentialExp/FDSP/Fort-ExteriorEE.jpg",
@@ -307,6 +307,270 @@
                 {
                     "activity": "Ferry Ride",
                     "URL": "https://delawarestateparks.reserveamerica.com/tourParkDetail.do?contractCode=DE&parkId=360113&_ga=2.8874101.1325512546.1605066569-680463194.1605066569"
+                }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Fort DuPont State Park",
+        "county": "New Castle",
+        "address": "Wilmington Ave, Delaware City, DE 19706",
+        "location": [39.570055347791744, -75.5856564174701],
+        "picture": "https://www.destateparks.com/wwwroot/images/parks/fortDuPont/FortDuPont-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Boating",
+                    "URL": "https://destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Fishing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                },
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/Trails"
+                }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Fox Point State Park",
+        "county": "New Castle",
+        "address": "Wilmington Ave, Delaware City, DE 19706",
+        "location": [39.76265830859087, -75.5023569018169],
+        "picture": "https://destateparks.com/wwwroot/images/parks/foxPoint/FoxPoint-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Biking",
+                    "URL": "https://destateparks.com/wwwroot/maps/fox-point/FoxPointMap.pdf"
+                },
+                {
+                    "activity": "Walking/Jogging",
+                    "URL": "https://destateparks.com/wwwroot/maps/fox-point/FoxPointMap.pdf"
+                }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Holts Landing State Park",
+        "county": "Sussex",
+        "address": "39415 Inlet Rd., Rehoboth Beach, Dagsboro, DE 1993",
+        "location": [38.61834483790503, -75.07003722054878],
+        "picture": "https://destateparks.com/wwwroot/images/parks/holtsLanding/Holts%20pier.jpg",
+        "activities": [
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/wwwroot/maps/holts-landing/HoltLandingMap.pdf"
+                },
+                {
+                    "activity": "Boating",
+                    "URL": "https://destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Fishing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                },
+                {
+                    "activity": "Clamming",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                },
+                {
+                    "activity": "Crabbing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                },
+                {
+                    "activity": "Hunting",
+                    "URL": "https://www.destateparks.com/Adventures/Hunting"
+                }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Killens Pond State Park",
+        "county": "Sussex",
+        "address": "5025 Killens Pond Rd, Felton, DE 19943",
+        "location": [38.98925179747407, -75.54561473067247],
+        "picture": "https://destateparks.com/wwwroot/images/parks/killens/4KPSP.jpg",
+        "activities": [
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/wwwroot/maps/killens-pond/Killens%20Pond%20Map.pdf"
+                },
+                {
+                    "activity": "Boating",
+                    "URL": "https://destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Camping",
+                    "URL": "https://destateparks.com/Reservations"
+                },
+                {
+                    "activity": "Canoeing",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Kayaking",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Fishing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                },
+                {
+                    "activity": "Geocaching",
+                    "URL": "https://www.destateparks.com/Adventures/Geocaching"
+                },
+                {
+                    "activity": "Waterpark",
+                    "URL": "https://destateparks.com/GoPlay/KillensPondWaterPark"
+                }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Lums Pond State Park",
+        "county": "Sussex",
+        "address": "1068 Howell School Rd, Bear, DE 19701",
+        "location": [39.56565892080319, -75.72102391716517],
+        "picture": "https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/wwwroot/maps/lums-pond/LumsPondMap.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://destateparks.com/wwwroot/maps/lums-pond/LumsPondMap.pdf"
+                },
+                {
+                    "activity": "Birding",
+                    "URL": "https://www.destateparks.com/Adventures/Birding"
+                },
+                {
+                    "activity": "Boating",
+                    "URL": "https://destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Camping",
+                    "URL": "https://destateparks.com/Reservations"
+                },
+                {
+                    "activity": "Canoeing",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Kayaking",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Fishing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                },
+                {
+                    "activity": "Geocaching",
+                    "URL": "https://www.destateparks.com/Adventures/Geocaching"
+                },
+                {
+                    "activity": "Horseback Riding",
+                    "URL": "http://www.sunsetstable.com/"
+                },
+                {
+                    "activity": "Hunting",
+                    "URL": "https://www.destateparks.com/Adventures/Hunting"
+                }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Trap Pond State Park",
+        "county": "Sussex",
+        "address": "33587 Baldcypress Lane, Laurel, DE 19956",
+        "location": [38.52589886110939, -75.4764220655845],
+        "picture": "https://destateparks.com/wwwroot/images/parks/trap/TrapPond-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/wwwroot/maps/trap-pond/TrapPondMap.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://destateparks.com/wwwroot/maps/trap-pond/TrapPondMap.pdf"
+                },
+                {
+                    "activity": "Birding",
+                    "URL": "https://www.destateparks.com/Adventures/Birding"
+                },
+                {
+                    "activity": "Boating",
+                    "URL": "https://destateparks.com/Adventures/BoatLaunch"
+                },
+                {
+                    "activity": "Camping",
+                    "URL": "https://destateparks.com/Reservations"
+                },
+                {
+                    "activity": "Canoeing",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Kayaking",
+                    "URL": "https://www.destateparks.com/Adventures/CanoeKayakPaddle"
+                },
+                {
+                    "activity": "Fishing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "White Clay Creek State Park",
+        "county": "New Castle",
+        "address": "750 Thompson Station Rd, Newark, DE 19711",
+        "location": [39.73284299969746, -75.75691254414615],
+        "picture": "https://destateparks.com/wwwroot/images/parks/whiteClayCreek/WhiteClay-HERO.jpg",
+        "activities": [
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/wwwroot/maps/white-clay-creek/WhiteClayCreekMap.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://destateparks.com/wwwroot/maps/white-clay-creek/WhiteClayCreekMap.pdf"
+                },
+                {
+                    "activity": "Geocaching",
+                    "URL": "https://www.destateparks.com/Adventures/Geocaching"
+                },
+                {
+                    "activity": "Hunting",
+                    "URL": "https://www.destateparks.com/Adventures/Hunting"
+                },
+                {
+                    "activity": "Fishing",
+                    "URL": "https://destateparks.com/Adventures/Fishing"
+                }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Wilmington State Parks",
+        "county": "New Castle",
+        "address": "1021 W 18th St, Wilmington, DE 19802",
+        "location": [39.762100805037704, -75.55125368832434],
+        "picture": "https://destateparks.com/wwwroot/images/EssentialExp/WSP/BrandywineRiverEE.jpg",
+        "activities": [
+                {
+                    "activity": "Hiking",
+                    "URL": "https://destateparks.com/wwwroot/maps/wilmington/WilmingtonMap.pdf"
+                },
+                {
+                    "activity": "Biking",
+                    "URL": "https://destateparks.com/wwwroot/maps/wilmington/WilmingtonMap.pdf"
+                },
+                {
+                    "activity": "Zoo",
+                    "URL": "https://destateparks.com/GoPlay/BrandywineZoo"
                 }
         ]
     }

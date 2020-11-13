@@ -1,13 +1,25 @@
 import React from "react";
 import icon from './JSIII-Graphics.svg';
 
-const Card = () => {
-    return (
-        <div className = "card">
-            <div className = "card-image"></div>
+
+
+
+
+
+
+const Card = (props) => {
+
+
+const x = 5;
+ 
+
+    return ( 
+        
+        <div className = "col-4 card">
+            <img className = "card-image" src={props.image} alt="image"></img>
             <div className = "card-content-bg">
-                <div className = "card-light-text">Lorem Ipsum</div>
-                <div className = "card-title-text">Lorem Ipsum</div>
+                <div className = "card-light-text">{props.address}</div>
+                <div className = "card-title-text">{props.name}</div>
                 <div className = "card-dark-subtext"> Lorem Ipsum</div>
                 <div className = "card-icon-container">
                     <img src={icon} className="card-icon" alt="icon" />
@@ -24,6 +36,7 @@ const Card = () => {
 
         </div>
     )
+
 }
 
 export default Card;

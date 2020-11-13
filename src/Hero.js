@@ -1,4 +1,5 @@
 import React from "react";
+import Herosearch from "./HeroSearch";
 
 const Hero = () =>  {
     return (
@@ -7,7 +8,7 @@ const Hero = () =>  {
         <div className ="hero-text">
         What will be your next adventure?
         </div>
-
+<Herosearch />
         </div>
     
     </div>

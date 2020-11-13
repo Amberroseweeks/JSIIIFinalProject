@@ -43,6 +43,10 @@ HTML {
   }
 }
 
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 
 .navbar {
 width: 100%;
@@ -54,12 +58,15 @@ background: #A19F9F;
 
 
 .hero {
-/* position: absolute; */
 width: 100%;
-height: auto;
-background: #f2f2f2;
+height: 400px;
+background: url("https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg");
+background-repeat: no-repeat !important;
+background-position: center;
+background-size: cover;
 
 }
+
 
 .hero-text-container {
   margin-left: 25%;
@@ -75,12 +82,13 @@ height: auto;
 .hero-text {
   align-content: center;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
+  font-weight: 900;
+  font-size: 60px;
   line-height: 70px;
   text-align: center;
-  padding-top: 100px;
-  color: #000000;
+  padding-top: 50px;
+  color: #ffffff;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9));
 }
 
 .hero-subtext {
@@ -138,7 +146,7 @@ padding: 10px;
 
 
 .card {
-  width: 40%;
+  width: 25%;
   height: 500px;
   margin: 30px;
   background-color: #ffffff;
