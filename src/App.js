@@ -25,17 +25,6 @@ const parksData = [];
       
     })
 
-    data.map((parksinfo) => {
-      console.log(parksinfo);
-      console.log(parksinfo.name);
-      return (
-        
-      <Card parkName={parksinfo.name} />
-      );
-    })
-
-    
-// console.log(parksData);
     return data
   };
 

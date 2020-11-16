@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card"
 import Herosearch from "./HeroSearch";
+import Taxonomie from "./Taxonomie";
 
 let parksData = [];
+let parksActivityData = [];
 
 const Restaurant = (props) => {
 
@@ -13,7 +15,10 @@ const Restaurant = (props) => {
       const data = await response.json();
       console.log(data);
       data.map((parksinfo) => {
+
             parksData.push(parksinfo)
+
+
             
       })
       return parksData;
@@ -25,13 +30,33 @@ const Restaurant = (props) => {
 
   }, []);
 console.log(park);
+
+
   return (
 
 
+    
+
         <div className="container">
         {
+
+          
+
             parksData.map((parkinfo) => {
-            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} />; 
+              console.log(parkinfo);
+              let allActivities = parkinfo.activities;
+              allActivities.map((activities) => {
+                  
+                  const activitiesList = activities.activity;
+                  parksActivityData.push(activitiesList)
+                  
+                  const element = <Taxonomie activity={activitiesList} />;
+                  return element;
+
+})
+console.log(parksActivityData);
+console.log(parkinfo.activities[0].activity);
+            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activity={parkinfo.activities[0].activity} /> ; 
             
             
       })}
