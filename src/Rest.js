@@ -6,11 +6,11 @@ import Taxonomie from "./Taxonomie";
 let parksData = [];
 let parksActivityData = [];
 
-const Restaurant = (props) => {
+const Park = (props) => {
 
-  const [park, setRestaurant] = useState({});
+  const [park, setPark] = useState({});
   useEffect(async () => {
-    const getRestaurant = async () => {
+    const getPark = async () => {
       const response = await fetch("https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/Stateparks.JSON");
       const data = await response.json();
       console.log(data);
@@ -24,8 +24,8 @@ const Restaurant = (props) => {
       return parksData;
       
     };
-    const park = await getRestaurant();
-    setRestaurant(park);
+    const park = await getPark();
+    setPark(park);
 
 
   }, []);
@@ -54,9 +54,20 @@ console.log(park);
                   return element;
 
 })
-console.log(parksActivityData);
-console.log(parkinfo.activities[0].activity);
-            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activity={parkinfo.activities[0].activity} /> ; 
+// console.log(parksActivityData);
+// console.log(parkinfo.activities[0].activity);
+let activityResults = parkinfo.activities[0].activity;
+let activityResults2 = parkinfo.activities[1].activity;
+
+
+let activityURL = parkinfo.activities[0].URL;
+let activityURL2 = parkinfo.activities[1].URL;
+let finalActivity = activityResults.replace(/\s/g, "");
+let finalActivity2 = activityResults2.replace(/\s/g, "");
+
+
+console.log(finalActivity);
+            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activity={finalActivity} url={activityURL} activity2={finalActivity2} url2={activityURL2} /> ; 
             
             
       })}
@@ -70,4 +81,4 @@ console.log(parkinfo.activities[0].activity);
 };
 
 
-export default Restaurant;
+export default Park;

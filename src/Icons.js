@@ -11,6 +11,7 @@ import swimmingicon from './ActivitiesIcons/swimmer-solid.svg';
 import kayakicon from './ActivitiesIcons/canoe-solid.svg';
 import kayakiconwhite from './ActivitiesIcons/canoe-solid-white.svg';
 import touricon from './ActivitiesIcons/map-signs-solid.svg';
+import Card from './Card.js'
 const {PropTypes} = React;
 
 
