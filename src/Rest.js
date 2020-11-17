@@ -67,7 +67,7 @@ let finalActivity2 = activityResults2.replace(/\s/g, "");
 
 
 console.log(finalActivity);
-            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activity={finalActivity} url={activityURL} activity2={finalActivity2} url2={activityURL2} /> ; 
+            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} activity={finalActivity} url={activityURL} activity2={finalActivity2} url2={activityURL2} /> ; 
             
             
       })}

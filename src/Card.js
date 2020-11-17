@@ -26,7 +26,15 @@ const x = 5;
                 <div className = "card-light-text">{props.address}</div>
                 <div className = "card-title-text">{props.name}</div>
                 <div className = "card-icon-container">
-                <div className = "card-dark-subtext"><a href={props.url}><Icons icon={ICONS[props.activity]} alt={props.activity2}/></a><a href={props.url2}><Icons icon={ICONS[props.activity2]} alt={props.activity2}/></a></div>
+                    {props.activities.map((activity) => {
+                        let activityFilter = activity.activity.replace(/\s/g, "");
+                        return (
+                            <a href={activity.URL}>
+                                <Icons icon={ICONS[activityFilter]} />
+                            </a>
+                        )
+                    })}
+                <div className = "card-dark-subtext"></div>
                 </div>
                 <div className = "card-dark-subtext-centered">View Reviews</div>
                 
