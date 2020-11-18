@@ -7,7 +7,7 @@ let parksData = [];
 let parksActivityData = [];
 
 const Park = (props) => {
-
+  const [reviews, setReviews] = useState([]);
   const [park, setPark] = useState({});
   useEffect(async () => {
     const getPark = async () => {
@@ -28,6 +28,16 @@ const Park = (props) => {
     setPark(park);
 
 
+    const getReviews = async () => {
+      const response = await fetch(
+        `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/12/reviews.json`
+      );
+      const reviews = await response.json();
+      setReviews(reviews);
+      console.log(reviews);
+    };
+
+    getReviews();
   }, []);
 console.log(park);
 
@@ -54,20 +64,11 @@ console.log(park);
                   return element;
 
 })
-// console.log(parksActivityData);
-// console.log(parkinfo.activities[0].activity);
-let activityResults = parkinfo.activities[0].activity;
-let activityResults2 = parkinfo.activities[1].activity;
 
 
-let activityURL = parkinfo.activities[0].URL;
-let activityURL2 = parkinfo.activities[1].URL;
-let finalActivity = activityResults.replace(/\s/g, "");
-let finalActivity2 = activityResults2.replace(/\s/g, "");
 
 
-console.log(finalActivity);
-            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} activity={finalActivity} url={activityURL} activity2={finalActivity2} url2={activityURL2} /> ; 
+            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} /> ; 
             
             
       })}
