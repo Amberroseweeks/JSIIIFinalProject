@@ -4,34 +4,16 @@ import './App.css';
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Card from "./Card";
-import Restaurant from "./Rest"
+import Park from "./Rest";
+import ReviewForm from "./ReviewForm";
+import Footer from "./Footer";
+import Padding from "./Padding";
 
 
 function App() {
 
 const stateParkNames = [];
 const parksData = [];
-
-
-
-
-
-  const getData = async () => {
-    const response = await fetch("https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/Stateparks.JSON");
-    const data = await response.json();
- 
-    data.forEach(function(data){
-      parksData.push(data)
-      
-    })
-
-    return data
-  };
-
-  getData();
-
-  
-
 
   return (
     <div >
@@ -44,10 +26,13 @@ const parksData = [];
 
 
 <div className="container">
-<Restaurant />
+<Park />
+</div>
+<Padding />
+<Footer />
 </div>
 
-</div>
+
 
   
   );

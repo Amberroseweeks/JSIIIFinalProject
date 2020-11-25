@@ -3,31 +3,26 @@ HTML {
   padding: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-self: center;
+  background-color: #e6e6e6;
+  align-items: center;
+
+}
 
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -112,7 +107,7 @@ background-size: cover;
 
 
 .hero-text-container {
-  margin-left: 25%;
+  /* margin-left: 25%; */
 align-content: center;
 width: 50%;
 height: auto;
@@ -210,7 +205,7 @@ padding: 10px;
 .card-content-bg {
   width: 100%;
   height: 200px;
-  background-color: #EDEDED;
+  background-color: #ffffff;
 }
 
 .card-light-text {
@@ -323,7 +318,6 @@ margin: 40px;
   position: absolute;
   margin-left: 42%;
   margin-top: 30px;
-  z-index: 2;
 }
 
 
@@ -463,3 +457,494 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+.reviews-bg{
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.review-container {
+  width: 100%;
+  display: flex;
+}
+  .review-image {
+    background: #C4C4C4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+
+  .review-text-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-name {
+
+    font-size: 18px;
+    width: 150%;
+    line-height: 23px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #000000;
+  
+    }
+
+  .review-text{
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin: 10px;
+  }
+
+  .review-activity-icon-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .review-border {
+      border-top: 1px solid #f2f2f2;
+      width: 50%;
+      align-self: center;
+      margin: 10px;
+      
+  }
+
+  .review-form-container {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-form-name-input {
+    
+    width: 65%;
+    height: 30px;
+    margin: 20px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .review-form-text-input {
+    
+    width: 65%;
+    height: 100px;
+    margin: 20px;
+    align-self: center;
+  }
+
+  .review-stars-container {
+
+    width: 100%;
+    margin: 20px;
+    display: flex;
+
+  }
+
+  .review-input-container {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+
+  }
+
+  .review-form-image-upload-button {
+    width: 90%;
+    height: 10%;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: none;
+  
+    background-color: #02b1e8;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #ffffff;
+  cursor: pointer;
+  }
+
+  .review-upload-container {
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .review-form-image-upload-button:hover {
+  
+  
+    width: 90%;
+    height: 10%;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: none;
+  
+    background-color: #1189ad;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #ffffff;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+  
+  }
+
+
+
+label {
+    width: 90%;
+    height: 10%;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: none;
+    padding: 20px;
+  
+    background-color: #02b1e8;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #ffffff;
+  cursor: pointer;
+  }
+  
+label:hover {
+  
+  
+    width: 90%;
+    height: 10%;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: none;
+  
+    background-color: #1189ad;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #ffffff;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+  
+  }
+
+
+
+  /* S T A R S */
+
+  .starSelection-1 {
+    cursor: pointer;
+  }
+
+  .starSelection-2 {
+    cursor: pointer;
+  }
+
+  .starSelection-3 {
+    cursor: pointer;
+  }
+
+  .starSelection-4 {
+    cursor: pointer;
+  }
+
+
+  .starSelection:hover {
+    cursor: pointer;
+    color: red;
+  }
+
+  .padding {
+    height: 300px;
+    background-color: #e6e6e6;
+    /* position: absolute; */
+    padding: 100px;
+  }
+
+  .footer {
+    height: 200px;
+    background-color: #C4C4C4;
+    /* position: absolute; */
+    padding: 100px;
+  }
+
+
+/* M E D I A  Q U E R I E S */
+
+@media only screen and (max-width: 1200px) {
+
+  .hero {
+    width: 100%;
+    height: 700px;
+    background: url("https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg");
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+    
+    }
+    
+    .beachhero {
+      width: 100%;
+      height: 400px;
+      background: url("https://destateparks.com/wwwroot/images/parks/delSeashore/DelawareSeashore-HERO.jpg");
+      background-repeat: no-repeat !important;
+      background-position: center;
+      background-size: cover;
+      
+      }
+    
+      .campinghero {
+        width: 100%;
+        height: 400px;
+        background: url("https://destateparks.com/wwwroot/images/reservations/RV-TentCamping-Hero.jpg");
+        background-repeat: no-repeat !important;
+        background-position: center;
+        background-size: cover;
+        
+        }
+        .scenichero {
+          width: 100%;
+          height: 400px;
+          background: url("https://destateparks.com/wwwroot/images/know/PetsInTheParkHero.jpg");
+          background-repeat: no-repeat !important;
+          background-position: center;
+          background-size: cover;
+          
+          }
+    
+        .topfivehero {
+          width: 100%;
+          height: 400px;
+          background: url("https://destateparks.com/wwwroot/images/attractions/KPwaterpark/WaterPark-HERO.jpg");
+          background-repeat: no-repeat !important;
+          background-position: center;
+          background-size: cover;
+          
+          }
+      
+          
+        
+    
+    
+    .hero-text-container {
+    align-content: center;
+    width: 75%;
+
+    
+    
+    
+    
+    }
+    
+    .hero-text {
+      align-content: center;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 70px;
+      text-align: center;
+      padding-top: 50px;
+      color: #ffffff;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9));
+    }
+    
+    .hero-subtext {
+      padding: 60px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9));
+    }
+
+
+    .form-group {
+      display: inline-block;
+      width: 100%;
+      height: 60px;
+      margin-top: 5%;
+      
+      
+      }
+      
+      
+      .form-field {
+        align-content: center;
+        width: 100%;
+      height: 50px;
+      font-size: 18;
+      padding: 10px;
+      
+        /* border: 1px solid #A19F9F; */
+        box-sizing: border-box;
+        /* border-radius: 5px; */
+        
+      }
+      
+      .form-group span {
+        
+      
+        background-color: #F9F9F9;;
+        font-size: 20px;
+        padding: 19px;
+        border: 1px solid #A19F9F;
+        box-sizing: border-box;
+      }
+      
+      .form-group button {
+        
+        background-color: #C4C4C4;
+        font-size: 16px;
+        padding: 19px;
+        border: 1px solid #A19F9F;
+        box-sizing: border-box;
+      }
+
+  .card {
+    background-color: lightblue;
+    width: 35%;
+    height: 500px;
+    margin: 30px;
+    background-color: #ffffff;
+  
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .hero {
+    width: 100%;
+    height: 300px;
+    background: url("https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg");
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+    
+    }
+    
+    .beachhero {
+      width: 100%;
+      height: 200px;
+      background: url("https://destateparks.com/wwwroot/images/parks/delSeashore/DelawareSeashore-HERO.jpg");
+      background-repeat: no-repeat !important;
+      background-position: center;
+      background-size: cover;
+      
+      }
+    
+      .campinghero {
+        width: 100%;
+        height: 200px;
+        background: url("https://destateparks.com/wwwroot/images/reservations/RV-TentCamping-Hero.jpg");
+        background-repeat: no-repeat !important;
+        background-position: center;
+        background-size: cover;
+        
+        }
+        .scenichero {
+          width: 100%;
+          height: 200px;
+          background: url("https://destateparks.com/wwwroot/images/know/PetsInTheParkHero.jpg");
+          background-repeat: no-repeat !important;
+          background-position: center;
+          background-size: cover;
+          
+          }
+    
+        .topfivehero {
+          width: 100%;
+          height: 200px;
+          background: url("https://destateparks.com/wwwroot/images/attractions/KPwaterpark/WaterPark-HERO.jpg");
+          background-repeat: no-repeat !important;
+          background-position: center;
+          background-size: cover;
+          
+          }
+      
+          
+        
+    
+    
+    .hero-text-container {
+    align-content: center;
+    width: 75%;
+    height: auto;
+    
+    
+    
+    
+    }
+    
+    .hero-text {
+      align-content: center;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+      padding-top: 50px;
+      color: #ffffff;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9));
+    }
+    
+    .hero-subtext {
+      padding: 16px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 100));
+    }
+
+
+  .card {
+    background-color: lightblue;
+    width: 100%;
+    height: 500px;
+    margin: 30px;
+    background-color: #ffffff;
+  
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+  }
+}
+
+
+
+
+
+
+
+
+
+ 

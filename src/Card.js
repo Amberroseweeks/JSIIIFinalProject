@@ -4,6 +4,9 @@ import Taxonomie from './Taxonomie.js';
 import Icons from './Icons.js';
 import {ICONS} from './constants';
 import ReviewForm from "./ReviewForm";
+import Reviews from "./Reviews";
+import Review from "./Review";
+
 
 
 
@@ -42,7 +45,10 @@ const x = 5;
                 </div>
             
                 <div className = "card-review-button"> <div className = "card-review-button-text">Write a Review</div></div>
+ <Review />
+ <Reviews id={props.id}/>
  <ReviewForm />
+ 
         </div>
     )
 
