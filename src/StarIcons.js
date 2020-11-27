@@ -1,5 +1,5 @@
 import React from "react";
-const {PropTypes} = React;
+// const {PropTypes} = React;
 
 
 

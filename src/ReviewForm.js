@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "@reach/router";
-import Reviews from "./Reviews";
-import Taxonomie from './Taxonomie.js';
-import Icons from "./Icons.js";
 import {ICONS} from "./constants";
 import StarIcons from "./StarIcons.js";
 
@@ -125,7 +121,7 @@ const ReviewForm = (props) =>{
         </div>
         <div className="review-stars-container">
         <p>What did you do?</p>
-        <select id="activities" name="activities">
+        <select className="activities" name="activities">
 
     <option value="#Activity1">#Activity1</option>
     <option value="#Activity2">#Activity2</option>
@@ -136,8 +132,8 @@ const ReviewForm = (props) =>{
   </select>
   </div>
   <div className="review-upload-container">
-  <input className="review-form-image-upload-button" type="file" name="reviewImage" id="upload" accept="image/x-png,image/jpeg,image/heic" hidden/>
-        <label for="upload" className="review-form-image-upload-button" >Upload an image</label>
+  <input className="review-form-image-upload-button" type="file" name="reviewImage"  accept="image/x-png,image/jpeg,image/heic" hidden/>
+        <label htmlFor="upload" className="review-form-image-upload-button" >Upload an image</label>
   </div>
 
       </form>

@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import TopFiveHero from "./TopFiveHero";
 // import Card from "./Card";
-import Restaurant from "../Rest"
+import Park from "../Rest"
 
 
 
@@ -17,7 +17,7 @@ const Camping = () =>{
     
     
     <div className="container">
-    <Restaurant />
+    <Park />
     </div>
     
     </div>

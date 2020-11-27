@@ -4,7 +4,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import BeachesHero from "./BeachesHero";
 // import Card from "./Card";
-import Restaurant from "../Rest"
+import Park from "../Rest"
 
 
 
@@ -20,7 +20,7 @@ const Beaches = () =>{
     
     
     <div className="container">
-    <Restaurant />
+    <Park />
     </div>
     
     </div>

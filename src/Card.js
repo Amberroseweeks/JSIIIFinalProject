@@ -1,6 +1,4 @@
 import React from "react";
-import icon from './JSIII-Graphics.svg';
-import Taxonomie from './Taxonomie.js';
 import Icons from './Icons.js';
 import {ICONS} from './constants';
 import ReviewForm from "./ReviewForm";
@@ -16,16 +14,13 @@ import Review from "./Review";
 
 
 const Card = (props) => {
-
-
-const x = 5;
  
 
     return ( 
         
 
-        <div className = "col-4 card">
-            <img className = "card-image" src={props.image} alt="image"></img>
+        <div className = "col-4 card" key={props.key}>
+            <img className = "card-image" src={props.image} alt="Delaware State Park"></img>
             <div className = "card-content-bg">
                 <div className = "card-light-text">{props.address}</div>
                 <div className = "card-title-text">{props.name}</div>
@@ -45,8 +40,8 @@ const x = 5;
                 </div>
             
                 <div className = "card-review-button"> <div className = "card-review-button-text">Write a Review</div></div>
- <Review />
- <Reviews id={props.id}/>
+ <Review  />
+ <Reviews id={props.id} />
  <ReviewForm />
  
         </div>

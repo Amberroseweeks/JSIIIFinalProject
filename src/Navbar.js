@@ -5,18 +5,18 @@ import icon from './JSIII-Graphics.svg';
 
 const Navbar = () => {
     return (
-    <div class ="navbar">
+    <div className ="navbar">
        <Link to="/"><img src={icon} className="card-icon" alt="icon" /></Link>{" "}      
-       <span class="navbartext">
+       <span className="navbartext">
         <Link to="/Beaches">BEST BEACHES</Link>{" "}
       </span>
-      <span class="navbartext">
+      <span className="navbartext">
         <Link to="/Camping">BEST CAMPING</Link>{" "}
       </span>
-      <span class="navbartext">
+      <span className="navbartext">
         <Link to="/Scenic">THE MOST SCENIC</Link>{" "}
       </span>
-      <span class="navbartext">
+      <span className="navbartext">
         <Link to="/TopFive">TOP 5 PARKS</Link>{" "}
       </span>
     

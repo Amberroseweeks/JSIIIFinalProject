@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Review from "./Review";
+
 
 let reviewData = [];
 let reviewData2 =[];
@@ -7,7 +7,7 @@ let reviewData2 =[];
 const Reviews = (props) =>{
 
 
-    console.log(props.id);
+   
     
 
     const [reviews, setReviews] = useState([]);
@@ -36,7 +36,7 @@ const Reviews = (props) =>{
             
           }, []);
 
-          console.log(reviewData);
+          
 
   return(
       

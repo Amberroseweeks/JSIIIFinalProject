@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Router } from "@reach/router";
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import Beaches from "./Beaches";
 import Camping from "./Camping";
 import Scenic from "./Scenic";

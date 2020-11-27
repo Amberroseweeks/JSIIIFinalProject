@@ -1,5 +1,5 @@
 import React from "react";
-import Herosearch from "../HeroSearch";
+
 
 const BeachesHero = () =>  {
     return (

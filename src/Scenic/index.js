@@ -1,10 +1,10 @@
 import React from "react";
 
-// import './App.css';
+
 import Navbar from "../Navbar";
 import ScenicHero from "./ScenicHero";
-// import Card from "./Card";
-import Restaurant from "../Rest"
+
+import Park from "../Rest"
 
 
 
@@ -17,7 +17,7 @@ const Scenic = () =>{
     
     
     <div className="container">
-    <Restaurant />
+    <Park />
     </div>
     
     </div>

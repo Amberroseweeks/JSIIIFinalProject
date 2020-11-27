@@ -1,16 +1,22 @@
 HTML {
   margin: none;
   padding: none;
+  background-color: #e6e6e6;
+}
+
+body {
+  background-color: #e6e6e6;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  align-self: center;
-  background-color: #e6e6e6;
   align-items: center;
-
+  align-content: center;
+  align-self: center; 
+  background-color: #e6e6e6;
+  flex-wrap: wrap;
+  margin-left: 5%;
 }
 
 .App {
@@ -25,23 +31,6 @@ HTML {
   }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container {
-  display: inline-flex;
-  flex-wrap: wrap;
-}
 
 .navbar {
 width: 100%;
@@ -54,6 +43,9 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
 
 
 .hero {
+display: flex;
+flex-direction: column;
+align-items: center;
 width: 100%;
 height: 700px;
 background: url("https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg");
@@ -64,6 +56,9 @@ background-size: cover;
 }
 
 .beachhero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 400px;
   background: url("https://destateparks.com/wwwroot/images/parks/delSeashore/DelawareSeashore-HERO.jpg");
@@ -74,6 +69,9 @@ background-size: cover;
   }
 
   .campinghero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 400px;
     background: url("https://destateparks.com/wwwroot/images/reservations/RV-TentCamping-Hero.jpg");
@@ -83,6 +81,9 @@ background-size: cover;
     
     }
     .scenichero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       height: 400px;
       background: url("https://destateparks.com/wwwroot/images/know/PetsInTheParkHero.jpg");
@@ -93,6 +94,9 @@ background-size: cover;
       }
 
     .topfivehero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       height: 400px;
       background: url("https://destateparks.com/wwwroot/images/attractions/KPwaterpark/WaterPark-HERO.jpg");

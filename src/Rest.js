@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card"
-import Herosearch from "./HeroSearch";
 import Taxonomie from "./Taxonomie";
 
 let parksData = [];
@@ -12,7 +11,7 @@ const Park = (props) => {
     const getPark = async () => {
       const response = await fetch("https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/Stateparks.JSON");
       const data = await response.json();
-      console.log(data);
+      
       data.map((parksinfo) => {
 
             parksData.push(parksinfo)
@@ -29,7 +28,6 @@ const Park = (props) => {
 
 
   }, []);
-console.log(park);
 
 
   return (
@@ -43,7 +41,7 @@ console.log(park);
           
 
             parksData.map((parkinfo) => {
-              console.log(parkinfo);
+              
               let allActivities = parkinfo.activities;
               allActivities.map((activities) => {
                   
@@ -58,14 +56,14 @@ console.log(park);
 
 
 
-            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} id={parkinfo.id}/> ; 
+            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} id={parkinfo.id} key={parkinfo.id}/> ; 
             
             
       })}
 
         
     </div>
-        
+
 
 
 )
