@@ -1,9 +1,9 @@
-import React from "react";
 import Icons from './Icons.js';
 import {ICONS} from './constants';
 import ReviewForm from "./ReviewForm";
 import Reviews from "./Reviews";
 import Review from "./Review";
+import React, { useState, useEffect } from "react";
 
 
 
@@ -14,7 +14,9 @@ import Review from "./Review";
 
 
 const Card = (props) => {
- 
+    const [open, setOpen] = useState(false);
+    const [openReviewForm, setOpenReviewForm] = useState(false);
+
 
     return ( 
         
@@ -35,15 +37,12 @@ const Card = (props) => {
                     })}
                 <div className = "card-dark-subtext"></div>
                 </div>
-                <div className = "card-dark-subtext-centered">View Reviews</div>
-                
+                <div className = "card-dark-subtext-centered" onClick={()=> setOpen(!open)} >View Reviews</div>
+                {open &&<Review  />}<Reviews id={props.id} />
+                <div className = "card-review-button" onClick={()=> setOpenReviewForm(!openReviewForm)}> <div className = "card-review-button-text">Write a Review</div></div>
+                {openReviewForm &&<ReviewForm />}
                 </div>
-            
-                <div className = "card-review-button"> <div className = "card-review-button-text">Write a Review</div></div>
- <Review  />
- <Reviews id={props.id} />
- <ReviewForm />
- 
+
         </div>
     )
 

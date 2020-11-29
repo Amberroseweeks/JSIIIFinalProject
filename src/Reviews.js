@@ -12,29 +12,29 @@ const Reviews = (props) =>{
 
     const [reviews, setReviews] = useState([]);
 
-    useEffect(async () => {
+    // useEffect(async () => {
     
         
-          const getReviews = async () => {
+    //       const getReviews = async () => {
             
-            const response = await fetch(
-              `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`
-            );
+    //         const response = await fetch(
+    //           `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`
+    //         );
         
-            const reviews = await response.json();
+    //         const reviews = await response.json();
             
         
 
-              reviewData.push(reviews);
+    //           reviewData.push(reviews);
               
  
             
-          };
+    //       };
         
-            getReviews();
-            setReviews();
+    //         getReviews();
+    //         setReviews();
             
-          }, []);
+    //       }, []);
 
           
 

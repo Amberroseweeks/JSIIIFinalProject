@@ -25,17 +25,19 @@ const Herosearch = () => {
     
     <div className="dropdown-content">
   
-    <img src={hikingicon} className="card-icon" alt="icon" />Hiking
-    <img src={bikingicon} className="card-icon" alt="icon" />Biking
-    <img src={kayakicon} className="card-icon" alt="icon" />Kayaking
-    <img src={rockclimbingicon} className="card-icon" alt="icon" />Rock Climbing
-    <img src={fishingicon} className="card-icon" alt="icon" />Fishing
-    <img src={touricon} className="card-icon" alt="icon" />Tours
-    <img src={campingicon} className="card-icon" alt="icon" />Camping
-    <img src={geocachingicon} className="card-icon" alt="icon" />Geocaching
-    <img src={museumicon} className="card-icon" alt="icon" />Museum
-    <img src={horsebackridingicon} className="card-icon" alt="icon" />Horseback Riding
-    <img src={swimmingicon} className="card-icon" alt="icon" />Swimming
+    <span className="icon-sort">
+      <img src={hikingicon} className="card-icon" alt="icon" />Hiking
+ <img src={bikingicon} className="card-icon" alt="icon" />Biking
+<img src={kayakicon} className="card-icon" alt="icon" />Kayaking
+<img src={rockclimbingicon} className="card-icon" alt="icon" />Rock Climbing
+<img src={fishingicon} className="card-icon" alt="icon" />Fishing
+<img src={touricon} className="card-icon" alt="icon" />Tours
+<img src={campingicon} className="card-icon" alt="icon" />Camping
+<img src={geocachingicon} className="card-icon" alt="icon" />Geocaching
+<img src={museumicon} className="card-icon" alt="icon" />Museum
+ <img src={horsebackridingicon} className="card-icon" alt="icon" />Horseback Riding
+<img src={swimmingicon} className="card-icon" alt="icon" />Swimming
+</span>
    
     </div>
     
