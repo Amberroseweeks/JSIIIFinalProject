@@ -32,10 +32,15 @@ const Card = (props) => {
             <img className = "card-image" src={props.image} alt="Delaware State Park"></img>
             <div className = "card-content-bg">
                 <div className = "card-light-text">{props.address}</div>
-
-                <Link to={`/Park/${props.id}`} name={props.name}>
+                <Link to={`/Park/${props.id}`} state={{
+                    name: props.name,
+                    address: props.address
+                    }}>
                 <div className = "card-title-text">{props.name}</div>
                 </Link>
+                {/* <Link to={`/Park/${props.id}`} name={props.name}>
+                <div className = "card-title-text">{props.name}</div>
+                </Link> */}
                 {/* <Link to={{
                     pathname:`/Park/${props.id}`
                 }} >

@@ -4,19 +4,25 @@ import {ICONS} from "./constants";
 import StarIcons from "./StarIcons.js";
 
 
-let starOneStatus = ["EmptyStar"];
-let starTwoStatus = ["EmptyStar"];
-let starThreeStatus = ["EmptyStar"];
-let starFourStatus = ["EmptyStar"];
+
 
 
 
 
 const ReviewForm = (props) =>{
 
-
+  const starOneStatus = ["EmptyStar"];
+  let starTwoStatus = ["EmptyStar"];
+  let starThreeStatus = ["EmptyStar"];
+  let starFourStatus = ["EmptyStar"];
   
     const [reviews, setReviews] = useState([]);
+    const value1 = () =>{
+      starOneStatus.splice(starOneStatus.indexOf("EmptyStar"), 1, "FullStar")
+      console.log(starOneStatus);
+      let star = "FullStar";
+      console.log("this works")
+  }
     const { register, handleSubmit, reset } = useForm();
       const onSubmit = async (formData) => {
         const newReview = {
@@ -24,7 +30,7 @@ const ReviewForm = (props) =>{
           stars: parseInt(formData.stars),
         };
         const response = await fetch(
-          `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}reviews.json`,
+          `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`,
           // `http://localhost:3000/restaurants/${props.restaurantId}/reviews`,
           {
             method: "POST",
@@ -60,14 +66,14 @@ const ReviewForm = (props) =>{
 
         <div className="review-stars-container">
 
-        <div className="starSelection-1" value="1" >
+        <div className="starSelection-1" value="1" onClick={()=> value1(starOneStatus)}>
 
         {starOneStatus.map((star) => {
 
           let starValue = 2;
                         return (
                            
-                          <StarIcons icon={ICONS[star]}/>
+                          <StarIcons icon={ICONS[star]} />
                                
                             
                                 
