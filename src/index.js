@@ -7,6 +7,8 @@ import Beaches from "./Beaches";
 import Camping from "./Camping";
 import Scenic from "./Scenic";
 import TopFive from "./TopFive";
+import ParkInfo from "./ParkInfo";
+import Card from "./Card";
 
 
 ReactDOM.render(
@@ -16,7 +18,9 @@ ReactDOM.render(
     <Beaches path="/Beaches" />
     <Camping path="/Camping" />
     <Scenic path="/Scenic" />
-    <TopFive path="/TopFive" />
+    <TopFive path="/TopFive"  />
+
+    <ParkInfo path="/Park/:id" component={Card} />
     </Router>
     
   </React.StrictMode>,

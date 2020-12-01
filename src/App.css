@@ -11,12 +11,11 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
-  align-self: center; 
+  /* align-items: center;
+  align-content: center; */
+  align-self: flex-start;
   background-color: #e6e6e6;
   flex-wrap: wrap;
-  margin-left: 5%;
 }
 
 .App {
@@ -33,6 +32,10 @@ body {
 
 
 .navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+   z-index: 1;
 width: 100%;
 height: 60px;
 margin: 0px;
@@ -150,7 +153,6 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9));
 display: inline-block;
 width: 100%;
 height: 60px;
-margin-left: 3%;
 margin-top: 5%;
 
 
@@ -192,7 +194,7 @@ padding: 10px;
 
 .card {
   width: 25%;
-  height: auto;
+  height: 400px;
   margin: 30px;
   background-color: #ffffff;
 
@@ -838,7 +840,9 @@ label:hover {
     width: 35%;
     height: 500px;
     margin: 30px;
+    margin-top: 50px;
     background-color: #ffffff;
+    align-items: flex-start;
   
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   }
@@ -889,9 +893,68 @@ label:hover {
 
 @media only screen and (max-width: 800px) {
 
+  
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: #e6e6e6;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbartext a {
+    display: none;
+    margin: 40px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #333333;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    
+    
+    .navbartext a:hover {
+      display: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #65c6f3;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+
+    .nav-icon {
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      color: #C4C4C4 !important;
+    }
+    
+    .nav-icon svg path {
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      fill: #C4C4C4 !important;
+    }
+
+
   .hero {
     width: 100%;
-    height: auto;
+    height: 500px;
     background: url("https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg");
     background-repeat: no-repeat !important;
     background-position: center;
@@ -980,45 +1043,51 @@ label:hover {
   .card {
     background-color: lightblue;
     width: 100%;
-    height: 500px;
-    margin: 30px;
+    height: auto;
+    margin: 10px;
     background-color: #ffffff;
   
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   }
 
   /* ----------drop down menu */
+.form-container{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+
+}
+
 
   .form-group {
-    display: inline-block;
-    width: 100%;
-    height: 60px;
+ 
+    width: 10%;
+    height: 40px;
+    margin: 0px;
+    
 
-    
-    
     }
     
     
     .form-field {
+      display: flex;
+      flex-direction: row;
       align-content: center;
       width: 90%;
-    height: 50px;
+    height: 40px;
     font-size: 18;
+    margin-bottom: -60px;
     
       /* border: 1px solid #A19F9F; */
       box-sizing: border-box;
       /* border-radius: 5px; */
       
     }
+
+
     
-    .form-group span {
-      
-    
-      background-color: #F9F9F9;;
-      font-size: 20px;
-      border: 1px solid #A19F9F;
-      box-sizing: border-box;
-    }
+
     
     .form-group button {
       
@@ -1026,73 +1095,174 @@ label:hover {
       font-size: 16px;
       border: 1px solid #A19F9F;
       box-sizing: border-box;
+      width: 10%;
+      display: flex;
+      flex-direction: row;
     }
 
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  icon-sort {
-    float: left;
-    
-  }
-  
-  icon-sort, .dropbtn {
+    align-content: center;
     display: flex;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    
+    flex-direction: row;
+  height: 40px;
+  font-size: 16;
+    box-sizing: border-box;
+
   }
+  
   
   icon-sort a:hover, .dropdown:hover .dropbtn {
+    display: flex;
+    flex-direction: row;
     background-color: red;
   }
   
   icon-sort.dropdown {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    width: 10%;
     
   }
+
+.dropdowncontentrow{
+justify-content: left;
+display: flex;
+flex-direction: row;
+align-self: left;
+width: 100%;
+cursor: pointer;
+margin: 5px;
+color: #c0c0c0;
+
+}
+
+/* .dropdowncontentrow :hover{
+
+  background-color: #f2f2f2;
+
   
+  } */
+
+  .dropdowncontentrowcontainer{
+    background-color: #ffffff;
+    justify-content: left;
+  }
+
+  .dropdowncontentrowcontainer:hover{
+    background-color:#f2f2f2;
+    justify-content: left;
+  }
+
+  .dropdowncontenticon{
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    margin-right: 5px;
+    justify-content: left;
+  }
+
+  .dropdowncontenticon-small{
+    width: 14px;
+    height: 14px;
+    margin-left: 0px;
+    margin-right: 5px;
+    justify-content: left;
+  }
+  .dropdown-content-icon{
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 20px;
+    height: 20px;
+
+  }
+  
+  .nav-icon-activity{
+    margin-right: 50px;
+    margin-left: -10px;
+    margin-top: -12px;
+  }
+
+  .nav-icon-caret-down{
+    margin-right: 10px;
+    margin-top: -12px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+
   .dropdown-content {
-    margin-right: 20px;
     display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 80%;
-    font-size: 16px;
+    width: 10%;
+    font-size: 14px;
     z-index: 1;
   }
-  
-  .dropdown-content a {
-    padding-right: 20px;
-    color: black;
-    font-size: 12;
-    padding: 12px 16px;
-    text-decoration: none;
-    align-content: flex-end;
-    display: inline-flex;
-    flex-wrap: wrap;
-    text-align: left;
-  }
 
- 
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropbtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+  }
   
   .dropdown:hover .dropdown-content {
+    width: 100px;
     display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    flex-wrap: wrap;
+
   }
+}
+
+.card-light-text {
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 20px;
+  padding-top: 10px;
+  
+  color: #C4C4C4;
+}
+
+.card-light-text-dropdown {
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 10px;
+  padding-top: 10px;
+  
+  color: #C4C4C4;
+}
+
+.card-title-text {
+  
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 47px;
+  
+  color: #000000;
+}
+
+.card-dark-subtext {
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 20px;
+  
+  color: #000000;
 }
 
 

@@ -11,45 +11,120 @@ import swimmingicon from './ActivitiesIcons/swimmer-solid.svg';
 import kayakicon from './ActivitiesIcons/canoe-solid.svg';
 import kayakiconwhite from './ActivitiesIcons/canoe-solid-white.svg';
 import touricon from './ActivitiesIcons/map-signs-solid.svg';
+import caretDown from './ActivitiesIcons/caret-down-solid.svg';
+import Search from './Search.js'
+import Icons from './Icons.js';
+import {ICONS} from './constants';
 
 const Herosearch = () => {
+
+ 
+
     return (
         
 <div>
 <div className = "hero-subtext"> Discover Delaware’s 17 state parks or leave a review to inform other adventure seekers.</div>
-<div className="form-group">
+<div className="form-container">
+  <div className="form-group">
     <ul key="1">
 
   <div className="dropdown">
-    <div className="dropbtn"><img src={kayakiconwhite} className="nav-icon" alt="icon"/>Kayaking</div>
-    
-    <div className="dropdown-content">
-  
-    <span className="icon-sort">
-      <img src={hikingicon} className="card-icon" alt="icon" />Hiking
- <img src={bikingicon} className="card-icon" alt="icon" />Biking
-<img src={kayakicon} className="card-icon" alt="icon" />Kayaking
-<img src={rockclimbingicon} className="card-icon" alt="icon" />Rock Climbing
-<img src={fishingicon} className="card-icon" alt="icon" />Fishing
-<img src={touricon} className="card-icon" alt="icon" />Tours
-<img src={campingicon} className="card-icon" alt="icon" />Camping
-<img src={geocachingicon} className="card-icon" alt="icon" />Geocaching
-<img src={museumicon} className="card-icon" alt="icon" />Museum
- <img src={horsebackridingicon} className="card-icon" alt="icon" />Horseback Riding
-<img src={swimmingicon} className="card-icon" alt="icon" />Swimming
-</span>
-   
-    </div>
-    
-  </div>
-    <input className="form-field" type="text" placeholder="Where would you like to go?"></input>
-    <div className="dropbtn">Search</div>
-    </ul>
+    <div className="dropbtn">
+      <div className="nav-icon-activity">
+      <img src={kayakiconwhite} className="nav-icon" alt="icon"/>
+        </div>
+        <div className="nav-icon-caret-down">
+        <img src={caretDown} className="nav-icon" alt="icon"/>
+        </div>
         </div>
         
-       
+    
+    <div className="dropdown-content">
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={bikingicon} alt="icon" /></div>Biking
         </div>
+      </div>
+    
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={campingicon} alt="icon" /></div>Camping
+        </div>
+      </div>
 
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={fishingicon} alt="icon" /></div>Fishing
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon-small"><img src={geocachingicon} alt="icon" /></div>Geocaching
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon-small"><img src={hikingicon} alt="icon" /></div>Hiking
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={horsebackridingicon} alt="icon" /></div>Horseriding
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={kayakicon} alt="icon" /></div>Kayaking
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={museumicon} alt="icon" /></div>Museums
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={touricon} alt="icon" /></div>Tours
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={rockclimbingicon} alt="icon" /></div>Rockclimbing
+        </div>
+      </div>
+
+      <div className="dropdowncontentrowcontainer">
+        <div className="dropdowncontentrow">
+          <div className="dropdowncontenticon"><img src={swimmingicon} alt="icon" /></div>Swimming
+        </div>
+      </div>
+    </div>
+
+    </div>
+    
+
+
+    </ul>
+        </div>
+       
+        
+        <input  className="form-field" type="text" placeholder="Where would you like to go?" />
+        <input type="submit" id="inputSearch" value="Search" class="searchButton"/>
+        
+    
+        
+        
+        
+    </div>
+        </div>
+        
     );
 };
 

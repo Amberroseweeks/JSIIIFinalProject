@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card"
 import Taxonomie from "./Taxonomie";
+import ParkInfo from "./ParkInfo";
 
 let parksData = [];
 let parksActivityData = [];
@@ -56,9 +57,12 @@ const Park = (props) => {
 
 
 
-            return <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} id={parkinfo.id} key={parkinfo.id}/> ; 
-            
-            
+            return (
+            <div>
+              
+              <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} id={parkinfo.id} key={parkinfo.id}/> ; 
+            </div>
+            )
       })}
 
         
