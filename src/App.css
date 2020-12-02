@@ -45,6 +45,72 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 
+.activityiconbarcontainer {
+  width: 100%;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  overflow-y: hidden;
+  /* padding: 20px; */
+  padding-top: 20px;
+  margin-bottom: 40px;
+  align-self: center;
+  justify-content: center;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.parkinfoiconcontainer {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  overflow-x: scroll;
+  overflow-y: clip;
+
+}
+
+.parkinfoiconlink{
+  margin: 10px;
+  text-decoration: none;
+  color: #74A57F;
+  font-weight: 900;
+  
+
+}
+
+.parkinfoiconlink:hover{
+  color: #5b8a65;
+
+
+  
+
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.arrow {
+  border: solid #e6e6e6;
+  border-width: 0 8px 8px 0;
+  margin-top: 50px;
+  margin-left: 80%;
+  position: absolute;
+  display: block;
+  padding: 3px;
+  width: 10px;
+  height: 10px;
+
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+}
+
 .hero {
 display: flex;
 flex-direction: column;
@@ -193,7 +259,7 @@ padding: 10px;
 
 
 .card {
-  width: 25%;
+  width: 300px;
   height: 400px;
   margin: 30px;
   background-color: #ffffff;
@@ -205,7 +271,9 @@ padding: 10px;
 .card-image {
   width: 100%;
   height: 200px;
+  object-fit: cover;
   background-color: #E5E5E5;
+  
 }
 
 .card-content-bg {
@@ -481,6 +549,7 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   display: flex;
 }
   .review-image {
+    display: flex;
     background: #C4C4C4;
     border-radius: 50%;
     width: 50px;
@@ -489,6 +558,10 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
     margin-top: 10px;
     object-fit: cover;
     overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    object-position: center;
+
   }
 
 
@@ -556,14 +629,23 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
 
   .review-stars-container {
 
-    width: 100%;
+    width: auto;
     margin: 20px;
     display: flex;
 
   }
 
+
+  .reviewcontainer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+  }
+
   .review-input-container {
-    width: 100%;
+    width: auto;
     align-self: center;
     justify-content: center;
 
@@ -588,7 +670,7 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   }
 
   .review-upload-container {
-    width: 100%;
+    width: auto;
     align-self: center;
     justify-content: center;
     margin: 20px;
@@ -724,6 +806,21 @@ label:hover {
       background-size: cover;
       
       }
+
+      .parkInfoHero {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat !important;
+        background-position: center;
+        background-size: cover;
+        
+        }
     
       .campinghero {
         width: 100%;
@@ -759,6 +856,10 @@ label:hover {
     
     
     .hero-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
     align-content: center;
     width: 75%;
 
@@ -766,6 +867,11 @@ label:hover {
     
     
     
+    }
+
+    .parkinfo-hero-text-container{
+      align-content: center;
+      width: 75%;
     }
     
     .hero-text {
@@ -837,7 +943,7 @@ label:hover {
 
   .card {
     background-color: lightblue;
-    width: 35%;
+    width: 300px;
     height: 500px;
     margin: 30px;
     margin-top: 50px;
@@ -1217,53 +1323,88 @@ color: #c0c0c0;
     flex-wrap: wrap;
 
   }
+
+  .arrow {
+    border: solid #e6e6e6;
+    border-width: 0 8px 8px 0;
+    margin-top: 50px;
+    margin-left: 90%;
+    position: absolute;
+    display: block;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+  
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  
+  }
+
+  .activityiconbarcontainer {
+    width: 100%;
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding-top: 30px;
+
+  }
+
+  .card-light-text {
+  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 20px;
+    padding-top: 10px;
+    
+    color: #C4C4C4;
+  }
+  
+  .card-light-text-dropdown {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 10px;
+    padding-top: 10px;
+    
+    color: #C4C4C4;
+  }
+  
+  .card-title-text {
+    
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 47px;
+    
+    color: #000000;
+  }
+  
+  .card-dark-subtext {
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 20px;
+    
+    color: #000000;
+  }
+
 }
 
-.card-light-text {
-  
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  margin-left: 20px;
-  padding-top: 10px;
-  
-  color: #C4C4C4;
-}
 
-.card-light-text-dropdown {
-  
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  margin-left: 10px;
-  padding-top: 10px;
-  
-  color: #C4C4C4;
-}
-
-.card-title-text {
-  
-  margin-left: 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 47px;
-  
-  color: #000000;
-}
-
-.card-dark-subtext {
-  
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  margin-left: 20px;
-  
-  color: #000000;
-}
 
 
 

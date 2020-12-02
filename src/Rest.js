@@ -60,7 +60,7 @@ const Park = (props) => {
             return (
             <div>
               
-              <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} id={parkinfo.id} key={parkinfo.id}/> ; 
+              <Card name={parkinfo.name} address={parkinfo.address} image={parkinfo.picture} activities={parkinfo.activities} id={parkinfo.id} key={parkinfo.id}/> 
             </div>
             )
       })}

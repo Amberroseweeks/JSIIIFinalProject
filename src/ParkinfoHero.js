@@ -1,14 +1,15 @@
 import React from "react";
 
 
-const ParkInfoHero = () =>  {
+const ParkInfoHero = (props) =>  {
     return (
-    <div className ="beachhero">
+    <div className ="parkInfoHero" style={{ backgroundImage: `url(${props.image})` }}>
+        
         <div className ="hero-text-container">
         <div className ="hero-text">
-        Dip your toes into the Atlantic.
+        {props.name}
         </div>
-        <div className = "hero-subtext"> Discover Delaware’s top rated Beaches. Or leave a review.</div>
+        <div className = "hero-subtext"> Discover others experiences or leave a review.</div>
         </div>
     
     </div>
