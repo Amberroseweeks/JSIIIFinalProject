@@ -10,6 +10,7 @@ import StarIcons from "./StarIcons.js";
 
 
 const ReviewForm = (props) =>{
+  
 
   const starOneStatus = ["EmptyStar"];
   let starTwoStatus = ["EmptyStar"];
@@ -17,31 +18,54 @@ const ReviewForm = (props) =>{
   let starFourStatus = ["EmptyStar"];
   
     const [reviews, setReviews] = useState([]);
-    const value1 = () =>{
+    const value1 = () => {
       starOneStatus.splice(starOneStatus.indexOf("EmptyStar"), 1, "FullStar")
       console.log(starOneStatus);
       let star = "FullStar";
       console.log("this works")
+      console.log(1)
+      return 1
+
   }
+  const value2 = () =>{
+    console.log("this works")
+    console.log(2)
+    return 2
+
+}
+const value3 = () =>{
+  console.log(3)
+  return 3
+
+}
+const value4 = () =>{
+
+  console.log(4)
+  return 4
+
+}
     const { register, handleSubmit, reset } = useForm();
       const onSubmit = async (formData) => {
+       
         const newReview = {
           ...formData,
-          stars: parseInt(formData.stars),
+          
         };
-        const response = await fetch(
-          `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`,
-          // `http://localhost:3000/restaurants/${props.restaurantId}/reviews`,
-          {
-            method: "POST",
-            body: JSON.stringify(newReview),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        const createdReview = await response.json();
-        setReviews([...reviews, createdReview]);
+        console.log(newReview);
+
+        // const response = await fetch(
+        //   `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`,
+        //   {
+        //     method: "POST",
+        //     body: JSON.stringify(newReview),
+        //     headers: {
+        //       "Content-Type": "application/json",
+        //     },
+        //   });
+
+        // const createdReview = await response.json();
+        // reset();
+        // setReviews([...reviews, createdReview]);
       };
 
     return(
@@ -49,28 +73,24 @@ const ReviewForm = (props) =>{
 
     
 <div>
-
-
-
-
 <div className="review-form-container">
-
 
         <form onSubmit={handleSubmit(onSubmit)}>
       
         <div className="review-input-container">
-        <input className="review-form-name-input" placeholder="Name" name="text" ref={register} />
+        <input className="review-form-name-input" placeholder="Name" name="name" ref={register} />
         <input className="review-form-text-input" name="text" placeholder="Tell us about your adventure." ref={register} />
+        <input type="file" name="image"  accept="image/x-png,image/jpeg" ref={register}  />
         </div>
 
 
-        <div className="review-stars-container">
+        {/* <div className="review-stars-container"> */}
 
-        <div className="starSelection-1" value="1" onClick={()=> value1(starOneStatus)}>
+        {/* <div className="starSelection-1" value="1" onClick={()=> value1(starOneStatus)}> */}
 
-        {starOneStatus.map((star) => {
+        {/* {starOneStatus.map((star) => {
 
-          let starValue = 2;
+          let starValue = 1;
                         return (
                            
                           <StarIcons icon={ICONS[star]} />
@@ -81,9 +101,9 @@ const ReviewForm = (props) =>{
                         )
                     })}
           </div>
-          <div className="starSelection-2">
+          <div className="starSelection-2" onClick={()=> value2(starTwoStatus)}>
           {starTwoStatus.map((star) => {
-            let starValue = 2
+            let starValue = 2;
                         return (
                            
                           <StarIcons icon={ICONS[star]}/>
@@ -94,9 +114,9 @@ const ReviewForm = (props) =>{
                         )
                     })}
                     </div>
-            <div className="starSelection-3">
+            <div className="starSelection-3" onClick={()=> value3(starThreeStatus)}>
                     {starThreeStatus.map((star) => {
-                      let starValue = 3
+                      let starValue = 3;
                         return (
                            
                           <StarIcons icon={ICONS[star]} />
@@ -107,7 +127,7 @@ const ReviewForm = (props) =>{
                         )
                     })}
             </div>
-            <div className="starSelection-4">
+            <div className="starSelection-4" onClick={()=> value4(starFourStatus)}>
             
                     {
                     
@@ -123,24 +143,9 @@ const ReviewForm = (props) =>{
                         )
                     })}
             </div>
-        {/* <StarIcons icon={ICONS[starStatus]} /> */}
-        </div>
-        <div className="review-stars-container">
-        <p>What did you do?</p>
-        <select className="activities" name="activities">
+        </div> */}
 
-    <option value="#Activity1">#Activity1</option>
-    <option value="#Activity2">#Activity2</option>
-    <option value="#Activity3">#Activity3</option>
-    <option value="#Activity4">#Activity4</option>
-
-
-  </select>
-  </div>
-  <div className="review-upload-container">
-  <input className="review-form-image-upload-button" type="file" name="reviewImage"  accept="image/x-png,image/jpeg,image/heic" hidden/>
-        <label htmlFor="upload" className="review-form-image-upload-button" >Upload an image</label>
-  </div>
+  <input type="submit" />
 
       </form>
       </div>

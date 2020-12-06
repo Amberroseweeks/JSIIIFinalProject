@@ -216,7 +216,11 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.9));
 
 
 .form-group {
-display: inline-block;
+display: flex;
+flex-direction: row;
+align-self: center;
+justify-content: center;
+flex-wrap: nowrap;
 width: 100%;
 height: 60px;
 margin-top: 5%;
@@ -227,8 +231,8 @@ margin-top: 5%;
 
 .form-field {
   align-content: center;
-  width: 70%;
-height: 50px;
+  width: 80%;
+height: 40px;
 font-size: 18;
 padding: 10px;
 
@@ -240,7 +244,8 @@ padding: 10px;
 
 .form-group span {
   
-
+  display: flex;
+  flex-direction: row;
   background-color: #F9F9F9;;
   font-size: 20px;
   padding: 19px;
@@ -255,6 +260,10 @@ padding: 10px;
   padding: 19px;
   border: 1px solid #A19F9F;
   box-sizing: border-box;
+}
+
+.searchButton{
+  height: 40px;
 }
 
 
@@ -475,7 +484,7 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
     overflow: hidden;
     background-color: #333;
   }
-  
+  /* 
   icon-sort {
     float: left;
     
@@ -513,7 +522,7 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
     font-size: 16px;
     z-index: 1;
   }
-  
+  */
   .dropdown-content a {
     padding-right: 20px;
     color: black;
@@ -524,14 +533,133 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
     display: inline-flex;
     flex-wrap: wrap;
     text-align: left;
-  }
+  } 
 
  
-  
+
   .dropdown-content a:hover {background-color: #f1f1f1;}
   
   .dropdown:hover .dropdown-content {
     display: flex;
+  } 
+
+
+  ul {
+    align-content: left;
+    display: flex;
+    flex-direction: row;
+  height: 40px;
+  font-size: 16;
+width: 5%;
+
+
+  }
+  
+  
+  icon-sort a:hover, .dropdown:hover .dropbtn {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+  }
+  
+  icon-sort.dropdown {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    
+  }
+
+.dropdowncontentrow{
+justify-content: left;
+display: flex;
+flex-direction: row;
+align-self: left;
+width: 100%;
+cursor: pointer;
+margin: 5px;
+color: #c0c0c0;
+
+}
+
+/* .dropdowncontentrow :hover{
+
+  background-color: #f2f2f2;
+
+  
+  } */
+
+  .dropdowncontentrowcontainer{
+    background-color: #ffffff;
+    justify-content: left;
+  }
+
+  .dropdowncontentrowcontainer:hover{
+    background-color:#f2f2f2;
+    justify-content: left;
+  }
+
+  .dropdowncontenticon{
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+    margin-right: 5px;
+    justify-content: left;
+  }
+
+  .dropdowncontenticon-small{
+    width: 14px;
+    height: 14px;
+    margin-left: 0px;
+    margin-right: 5px;
+    justify-content: left;
+  }
+  .dropdown-content-icon{
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 20px;
+    height: 20px;
+
+  }
+  
+  .nav-icon-activity{
+    margin-right: 50px;
+    margin-left: -10px;
+    margin-top: -12px;
+  }
+
+  .nav-icon-caret-down{
+    margin-right: 10px;
+    margin-top: -12px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 10%;
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  .dropbtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    flex-wrap: wrap;
+
   }
 
 .reviews-bg{
@@ -900,7 +1028,11 @@ label:hover {
 
 
     .form-group {
-      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      justify-content: center;
+      flex-wrap: nowrap;
       width: 100%;
       height: 60px;
       margin-top: 5%;
@@ -911,9 +1043,9 @@ label:hover {
       
       .form-field {
         align-content: center;
-        width: 100%;
-      height: 50px;
-      font-size: 18;
+        width: 80%;
+      height: 40px;
+      font-size: 16px;
       padding: 10px;
       
         /* border: 1px solid #A19F9F; */
@@ -924,7 +1056,8 @@ label:hover {
       
       .form-group span {
         
-      
+        display: flex;
+        flex-direction: row;
         background-color: #F9F9F9;;
         font-size: 20px;
         padding: 19px;
@@ -940,6 +1073,10 @@ label:hover {
         border: 1px solid #A19F9F;
         box-sizing: border-box;
       }
+      
+      .searchButton{
+        height: 40px;
+      }
 
   .card {
     background-color: lightblue;
@@ -953,48 +1090,6 @@ label:hover {
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
   }
 
-  .form-group {
-    display: inline-block;
-    width: 100%;
-    height: 60px;
-    margin-left: 3%;
-    margin-top: 5%;
-    
-    
-    }
-    
-    
-    .form-field {
-      align-content: center;
-      width: 100%;
-    height: 50px;
-    font-size: 18;
-    padding: 10px;
-    
-      /* border: 1px solid #A19F9F; */
-      box-sizing: border-box;
-      /* border-radius: 5px; */
-      
-    }
-    
-    .form-group span {
-      
-    
-      background-color: #F9F9F9;;
-      font-size: 20px;
-      padding: 19px;
-      border: 1px solid #A19F9F;
-      box-sizing: border-box;
-    }
-    
-    .form-group button {
-      
-      background-color: #C4C4C4;
-      font-size: 16px;
-      padding: 19px;
-      border: 1px solid #A19F9F;
-      box-sizing: border-box;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1003,10 +1098,11 @@ label:hover {
 
   .container {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
     background-color: #e6e6e6;
+    /* margin: none; */
   }
 
   .navbar{
@@ -1148,7 +1244,7 @@ label:hover {
 
   .card {
     background-color: lightblue;
-    width: 100%;
+    width: 95%;
     height: auto;
     margin: 10px;
     background-color: #ffffff;
@@ -1157,56 +1253,58 @@ label:hover {
   }
 
   /* ----------drop down menu */
-.form-container{
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-
-}
-
-
   .form-group {
- 
-    width: 10%;
-    height: 40px;
-    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 60px;
+    margin-top: 5%;
     
-
+    
     }
     
     
     .form-field {
-      display: flex;
-      flex-direction: row;
       align-content: center;
-      width: 90%;
+      width: 80%;
     height: 40px;
-    font-size: 18;
-    margin-bottom: -60px;
+    font-size: 16px;
+    padding: 10px;
     
       /* border: 1px solid #A19F9F; */
       box-sizing: border-box;
       /* border-radius: 5px; */
       
     }
-
-
     
-
+    .form-group span {
+      
+      display: flex;
+      flex-direction: row;
+      background-color: #F9F9F9;;
+      font-size: 20px;
+      padding: 19px;
+      border: 1px solid #A19F9F;
+      box-sizing: border-box;
+    }
     
     .form-group button {
       
       background-color: #C4C4C4;
       font-size: 16px;
+      padding: 19px;
       border: 1px solid #A19F9F;
       box-sizing: border-box;
-      width: 10%;
-      display: flex;
-      flex-direction: row;
+    }
+    
+    .searchButton{
+      height: 40px;
     }
 
-
+/* Begin input styling */
   ul {
     align-content: center;
     display: flex;

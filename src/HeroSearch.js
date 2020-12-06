@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import bikingicon from './ActivitiesIcons/biking-solid.svg';
 import hikingicon from './ActivitiesIcons/walking-solid.svg';
 import fishingicon from './ActivitiesIcons/fish-solid.svg';
@@ -12,17 +12,26 @@ import kayakicon from './ActivitiesIcons/canoe-solid.svg';
 import kayakiconwhite from './ActivitiesIcons/canoe-solid-white.svg';
 import touricon from './ActivitiesIcons/map-signs-solid.svg';
 import caretDown from './ActivitiesIcons/caret-down-solid.svg';
+import Card from './Card';
 import Search from './Search.js'
 import Icons from './Icons.js';
 import {ICONS} from './constants';
 
 const Herosearch = () => {
+  const [title, setTitle] = useState('')
 
+  let searchTermValue = title
+  const searchTerm = () => {
+    console.log(searchTermValue)
+    
+  }
  
 
     return (
+      
         
 <div>
+
 <div className = "hero-subtext"> Discover Delaware’s 17 state parks or leave a review to inform other adventure seekers.</div>
 <div className="form-container">
   <div className="form-group">
@@ -40,11 +49,7 @@ const Herosearch = () => {
         
     
     <div className="dropdown-content">
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={bikingicon} alt="icon" /></div>Biking
-        </div>
-      </div>
+
     
       <div className="dropdowncontentrowcontainer">
         <div className="dropdowncontentrow">
@@ -112,12 +117,12 @@ const Herosearch = () => {
 
 
     </ul>
-        </div>
+        
        
         
-        <input  className="form-field" type="text" placeholder="Where would you like to go?" />
-        <input type="submit" id="inputSearch" value="Search" class="searchButton"/>
-        
+        <input  className="form-field" type="text" placeholder="Where would you like to go?" onChange={event => setTitle(event.target.value)} />
+        <input type="submit" id="inputSearch" value="Search" class="searchButton" onClick={event => searchTerm(event)}/>
+        </div>
     
         
         

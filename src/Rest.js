@@ -3,10 +3,14 @@ import Card from "./Card"
 import Taxonomie from "./Taxonomie";
 import ParkInfo from "./ParkInfo";
 
+
 let parksData = [];
 let parksActivityData = [];
 
 const Park = (props) => {
+
+
+
   const [park, setPark] = useState({});
   useEffect(async () => {
     const getPark = async () => {

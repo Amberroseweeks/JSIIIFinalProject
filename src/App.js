@@ -14,7 +14,7 @@ function App() {
     <div >
 <Navbar />  
  
-<Hero>
+<Hero >
 
 
 </Hero>
