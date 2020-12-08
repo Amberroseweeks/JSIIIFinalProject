@@ -165,7 +165,7 @@ return (
 
 <p onClick={()=> setOpenForm(!openform)}>Write a review</p>
 {openform &&
-    <ReviewForm />
+    <ReviewForm id={props.id}/>
 }
     </div>
 

@@ -10,6 +10,7 @@ import StarIcons from "./StarIcons.js";
 
 
 const ReviewForm = (props) =>{
+  console.log(props.id)
   
 
   const starOneStatus = ["EmptyStar"];
@@ -53,19 +54,22 @@ const value4 = () =>{
         };
         console.log(newReview);
 
-        // const response = await fetch(
-        //   `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`,
-        //   {
-        //     method: "POST",
-        //     body: JSON.stringify(newReview),
-        //     headers: {
-        //       "Content-Type": "application/json",
-        //     },
-        //   });
+        const response = await fetch(
+          `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`,
+          {
+            
+            method: "POST",
+            body: JSON.stringify(formData),
+            headers: {
+              'Accept': 'application/json',
+              "Access-Control-Allow-Origin": "*",
+              "Content-Type": "application/json",
+            },
+          });
 
-        // const createdReview = await response.json();
-        // reset();
-        // setReviews([...reviews, createdReview]);
+        const createdReview = await response.json();
+        reset();
+        setReviews([...reviews, createdReview]);
       };
 
     return(
