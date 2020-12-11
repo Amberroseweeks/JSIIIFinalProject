@@ -29,7 +29,7 @@ const ParkInfo = (props) =>{
 
    
     const [reviews, setReviews] = useState([]);
-    const [activities, setActivities] = useState([]);
+    
     const [parks, setPark] = useState([]);
     const [open, setOpen] = useState(false);
    
@@ -47,13 +47,7 @@ const ParkInfo = (props) =>{
             setPark(parks);
             console.log(parks)
           };
-
-        //   parks.map((park)=>{
-        //       console.log(park.activity)
-        //       const activities = park.activity
-        //       setActivities(activities)
-        //       console.log(activities)
-        //   })
+          
 
           const getReviews = async () => {
           
@@ -87,10 +81,8 @@ console.log(parks)
         let activitiesMap = parks.map((park)=>{
         if(park.id == props.id){
             console.log(park.activities)
-            const activities = park.activities
-              setActivities(activities)
             let fullActivities = park.activities
-            
+            activities.push(fullActivities)
                     return (
                         fullActivities
                     )
@@ -178,7 +170,7 @@ return (
 <Reviews />
 
 
-    <ReviewForm id={props.id}/>
+    <ReviewForm id={props.id} activities={activities}/>
 
     </div>
 

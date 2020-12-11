@@ -3,7 +3,7 @@ import Icons from "./Icons.js";
 import {ICONS} from "./constants";
 import StarIcons from "./StarIcons.js";
 
-let activities = ["Hiking", "Kayaking", "Biking"];
+let activities = [];
 const Review = (props) =>{
     const [open, setOpen] = useState(false);
 
@@ -17,10 +17,7 @@ const Review = (props) =>{
     <div className="review-name">
     {props.stars}
 
-    <StarIcons icon={ICONS["FullStar"] } />
-    <StarIcons icon={ICONS["FullStar"]} />
-    <StarIcons icon={ICONS["FullStar"]} />
-    <StarIcons icon={ICONS["FullStar"]} />
+
     </div>
     <div className="review-text">{props.text}</div>
     <div className="review-activity-icon-container">

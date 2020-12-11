@@ -103,16 +103,8 @@ const value4 = () =>{
         <input className="review-form-text-input" name="text" placeholder="Tell us about your adventure." ref={register} />
         <input name="stars" type="number" min="0" max="5" ref={register}/>
 
-        <br></br>
-        <br></br>
-
         <input type="file" name="image"  accept="image/x-png,image/jpeg" ref={register}  />
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
-        <label for="vehicle1"> I have a bike</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"></input>
-        <label for="vehicle2"> I have a car</label>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"></input>
-        <label for="vehicle3"> I have a boat</label>
+
         </div>
        
 
