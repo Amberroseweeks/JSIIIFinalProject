@@ -6,15 +6,18 @@ import ParkInfo from "./ParkInfo";
 
 let parksData = [];
 let parksActivityData = [];
+let parkFilter = [];
 
 const Park = (props) => {
+  console.log(props.searchText)
 
 
 
   const [park, setPark] = useState({});
   useEffect(async () => {
     const getPark = async () => {
-      const response = await fetch("https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/Stateparks.JSON");
+      const response = await fetch("http://localhost:3000/parks");
+      console.log(response)
       const data = await response.json();
       
       data.map((parksinfo) => {
@@ -35,6 +38,16 @@ const Park = (props) => {
   }, []);
 
 
+  let parkNameFilter = parksData.filter(function (e) {
+    const parkName = e.name
+    const parkAddress = e.address
+    const parkNameLowercase = parkName.toLowerCase()
+    const parkAddressLowercase = parkAddress.toLowerCase()
+    return parkNameLowercase.includes(props.searchText) || parkAddressLowercase.includes(props.searchText)
+});
+console.log(parkNameFilter);
+
+
   return (
 
 
@@ -42,11 +55,8 @@ const Park = (props) => {
 
         <div className="container">
         {
+            parkNameFilter.map((parkinfo) => {
 
-          
-
-            parksData.map((parkinfo) => {
-              
               let allActivities = parkinfo.activities;
               allActivities.map((activities) => {
                   

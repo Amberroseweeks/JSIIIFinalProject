@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import {ICONS} from "./constants";
 import StarIcons from "./StarIcons.js";
-
-
-
+import Review from "./Review";
 
 
 
 
 const ReviewForm = (props) =>{
+  let activtiesAll = [];
+
   console.log(props.id)
   
 
@@ -17,6 +17,7 @@ const ReviewForm = (props) =>{
   let starTwoStatus = ["EmptyStar"];
   let starThreeStatus = ["EmptyStar"];
   let starFourStatus = ["EmptyStar"];
+  const [openform, setOpenForm] = useState(true);
   
     const [reviews, setReviews] = useState([]);
     const value1 = () => {
@@ -50,19 +51,19 @@ const value4 = () =>{
        
         const newReview = {
           ...formData,
+          parkID: parseInt(props.id),
+          stars: parseInt(formData.stars),
           
         };
         console.log(newReview);
 
         const response = await fetch(
-          `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`,
+          `http://localhost:3000/parks/${props.id}/reviews`,
           {
             
             method: "POST",
             body: JSON.stringify(formData),
             headers: {
-              'Accept': 'application/json',
-              "Access-Control-Allow-Origin": "*",
               "Content-Type": "application/json",
             },
           });
@@ -77,82 +78,50 @@ const value4 = () =>{
 
     
 <div>
+
+  {            reviews.map((review) => {
+                console.log(review)
+                console.log(review.text);
+              
+                return (
+                    <div>
+                      
+                      <Review text={review.text} image={review.img} stars={review.stars}/>
+                      
+                    </div>
+                    
+                    )
+    
+            })}
+            {openform && 
 <div className="review-form-container">
 
-        <form onSubmit={handleSubmit(onSubmit)}>
-      
+       
+       <form onSubmit={handleSubmit(onSubmit)}>
+      <p>Write a review</p>
         <div className="review-input-container">
-        <input className="review-form-name-input" placeholder="Name" name="name" ref={register} />
         <input className="review-form-text-input" name="text" placeholder="Tell us about your adventure." ref={register} />
+        <input name="stars" type="number" min="0" max="5" ref={register}/>
+
+        <br></br>
+        <br></br>
+
         <input type="file" name="image"  accept="image/x-png,image/jpeg" ref={register}  />
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
+        <label for="vehicle1"> I have a bike</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"></input>
+        <label for="vehicle2"> I have a car</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"></input>
+        <label for="vehicle3"> I have a boat</label>
         </div>
+       
 
-
-        {/* <div className="review-stars-container"> */}
-
-        {/* <div className="starSelection-1" value="1" onClick={()=> value1(starOneStatus)}> */}
-
-        {/* {starOneStatus.map((star) => {
-
-          let starValue = 1;
-                        return (
-                           
-                          <StarIcons icon={ICONS[star]} />
-                               
-                            
-                                
-                            
-                        )
-                    })}
-          </div>
-          <div className="starSelection-2" onClick={()=> value2(starTwoStatus)}>
-          {starTwoStatus.map((star) => {
-            let starValue = 2;
-                        return (
-                           
-                          <StarIcons icon={ICONS[star]}/>
-                               
-                            
-                                
-                            
-                        )
-                    })}
-                    </div>
-            <div className="starSelection-3" onClick={()=> value3(starThreeStatus)}>
-                    {starThreeStatus.map((star) => {
-                      let starValue = 3;
-                        return (
-                           
-                          <StarIcons icon={ICONS[star]} />
-                               
-                            
-                                
-                            
-                        )
-                    })}
-            </div>
-            <div className="starSelection-4" onClick={()=> value4(starFourStatus)}>
-            
-                    {
-                    
-                    starFourStatus.map((star) => {
-                      let starValue = 4
-                        return (
-                           
-                          <StarIcons icon={ICONS[star]} />
-                               
-                            
-                                
-                            
-                        )
-                    })}
-            </div>
-        </div> */}
 
   <input type="submit" />
 
       </form>
       </div>
+}
 
       </div>
 

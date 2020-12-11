@@ -41,14 +41,6 @@ const Card = (props) => {
                     }}>
                 <div className = "card-title-text">{props.name}</div>
                 </Link>
-                {/* <Link to={`/Park/${props.id}`} name={props.name}>
-                <div className = "card-title-text">{props.name}</div>
-                </Link> */}
-                {/* <Link to={{
-                    pathname:`/Park/${props.id}`
-                }} >
-                <div className = "card-title-text">{props.name}</div>
-                </Link> */}
                 
                 <div className = "card-icon-container">
                     {props.activities.map((activity) => {
@@ -60,12 +52,6 @@ const Card = (props) => {
                         )
                     })}
                 </div>
-                {/* <div className = "card-dark-subtext"></div>
-                <div className = "card-dark-subtext-centered" onClick={()=> setOpen(!open)} >View Reviews</div>
-                {open &&<Review  />}
-                <Reviews id={props.id} />
-                <div className = "card-review-button" onClick={()=> setOpenReviewForm(!openReviewForm)}> <div className = "card-review-button-text">Write a Review</div></div>
-                {openReviewForm &&<ReviewForm />} */}
                 
                 </div>
 

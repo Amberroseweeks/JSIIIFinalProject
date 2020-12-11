@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@reach/router";
 import icon from './JSIII-Graphics.svg';
+import logo from './ActivitiesIcons/Delaware-State-Parks-Search-Logo.png';
 import hamburgericon from './ActivitiesIcons/bars-solid.svg';
 
 
@@ -8,7 +9,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
     return (
     <div className ="navbar">
-       <Link to="/"><img src={icon} className="card-icon" alt="icon" /></Link>{" "}      
+       <Link to="/"><img src={logo} width="120px"/></Link>{" "}      
        <span className="navbartext">
         <Link to="/Beaches">BEST BEACHES</Link>{" "}
       </span>
@@ -47,5 +48,4 @@ const Navbar = () => {
     );
 };
 
-// document.body.innerHTML = Navbar();
 export default Navbar;

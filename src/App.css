@@ -9,10 +9,9 @@ body {
 }
 
 .container {
+  margin-left: 28px;
   display: flex;
   flex-direction: row;
-  /* align-items: center;
-  align-content: center; */
   align-self: flex-start;
   background-color: #e6e6e6;
   flex-wrap: wrap;
@@ -39,7 +38,6 @@ body {
 width: 100%;
 height: 60px;
 margin: 0px;
-/* position: absolute; */
 background: #ffffff;
 filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
 }
@@ -116,7 +114,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%;
-height: 700px;
+height: 400px;
 background: url("https://destateparks.com/wwwroot/images/parks/lums/LumsPond-HERO.jpg");
 background-repeat: no-repeat !important;
 background-position: center;
@@ -180,7 +178,6 @@ background-size: cover;
 
 
 .hero-text-container {
-  /* margin-left: 25%; */
 align-content: center;
 width: 50%;
 height: auto;
@@ -223,7 +220,7 @@ justify-content: center;
 flex-wrap: nowrap;
 width: 100%;
 height: 60px;
-margin-top: 5%;
+
 
 
 }
@@ -236,9 +233,7 @@ height: 40px;
 font-size: 18;
 padding: 10px;
 
-  /* border: 1px solid #A19F9F; */
   box-sizing: border-box;
-  /* border-radius: 5px; */
   
 }
 
@@ -484,45 +479,7 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
     overflow: hidden;
     background-color: #333;
   }
-  /* 
-  icon-sort {
-    float: left;
-    
-  }
-  
-  icon-sort, .dropbtn {
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-  }
-  
-  icon-sort a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  icon-sort.dropdown {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-  
-  .dropdown-content {
-    margin-right: 20px;
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: 80%;
-    font-size: 16px;
-    z-index: 1;
-  }
-  */
+
   .dropdown-content a {
     padding-right: 20px;
     color: black;
@@ -580,13 +537,6 @@ margin: 5px;
 color: #c0c0c0;
 
 }
-
-/* .dropdowncontentrow :hover{
-
-  background-color: #f2f2f2;
-
-  
-  } */
 
   .dropdowncontentrowcontainer{
     background-color: #ffffff;
@@ -1047,10 +997,7 @@ label:hover {
       height: 40px;
       font-size: 16px;
       padding: 10px;
-      
-        /* border: 1px solid #A19F9F; */
         box-sizing: border-box;
-        /* border-radius: 5px; */
         
       }
       
@@ -1273,10 +1220,7 @@ label:hover {
     height: 40px;
     font-size: 16px;
     padding: 10px;
-    
-      /* border: 1px solid #A19F9F; */
       box-sizing: border-box;
-      /* border-radius: 5px; */
       
     }
     
@@ -1341,12 +1285,6 @@ color: #c0c0c0;
 
 }
 
-/* .dropdowncontentrow :hover{
-
-  background-color: #f2f2f2;
-
-  
-  } */
 
   .dropdowncontentrowcontainer{
     background-color: #ffffff;

@@ -17,64 +17,65 @@ import { render } from "@testing-library/react";
 
 const reviewData=[];
 const activities=[];
+const activityList=[];
+
 let activityLength;
+
 let width = window.innerWidth;
-console.log(width);
 
 const ParkInfo = (props) =>{
 
+    console.log(activityList)
 
-
-    // const [show, setShow] = useState(false);
+   
     const [reviews, setReviews] = useState([]);
+    const [activities, setActivities] = useState([]);
     const [parks, setPark] = useState([]);
     const [open, setOpen] = useState(false);
-    const [openform, setOpenForm] = useState(false);
+   
+    
    
 
 
     useEffect(async () => {
-
+        
         const getPark= async () => {
             const response = await fetch(
-              `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/Stateparks.JSON`
+              `http://localhost:3000/parks`
             );
             const parks = await response.json();
             setPark(parks);
             console.log(parks)
           };
+
+        //   parks.map((park)=>{
+        //       console.log(park.activity)
+        //       const activities = park.activity
+        //       setActivities(activities)
+        //       console.log(activities)
+        //   })
+
+          const getReviews = async () => {
+          
+            const response = await fetch(
+              `http://localhost:3000/parks/${props.id}/reviews`
+            );
+        
+            const reviews = await response.json();
+            setReviews(reviews);
+            console.log(reviews)
+            
+        
+  
+              reviewData.push(reviews);
+              
+
+          };
     
  
 console.log(parks)
         
-        const getReviews = async () => {
-          
-          const response = await fetch(
-            `https://raw.githubusercontent.com/Amberroseweeks/JSIIIHW1/main/parks/${props.id}/reviews.json`
-          );
-      
-          const reviews = await response.json();
-          setReviews(reviews);
-          
-      
 
-            reviewData.push(reviews);
-            
-            
-
-            reviews.map((review) => {
-                console.log(review)
-                console.log(review.text);
-              
-                return (
-                    <div>
-                      
-                      <Review text={review.text} image={review.img} stars={review.stars}/>; 
-                    </div>
-                    )
-    
-            })
-        };
       
           getReviews();
           getPark();
@@ -83,7 +84,23 @@ console.log(parks)
 
           
         }, []);
+        let activitiesMap = parks.map((park)=>{
+        if(park.id == props.id){
+            console.log(park.activities)
+            const activities = park.activities
+              setActivities(activities)
+            let fullActivities = park.activities
+            
+                    return (
+                        fullActivities
+                    )
 
+                }
+
+            })
+        
+        
+        console.log(activitiesMap);
 
 return (
     
@@ -94,20 +111,18 @@ return (
         
         {            parks.map((park)=>{
                 if(park.id == props.id){
-                    console.log(park.activities);
                     activityLength = Object.keys(park.activities).length;
                     
                     return (
                         <div className = "parkinfoiconcontainer">
                         {
+                            
                             (Object.keys(park.activities).length > 4) &&
                             <i className="arrow right"></i>
                             }
-
-{/* width < "430" ||  */}
                       
                         {park.activities.map((activity) => {
-                            
+                           
                             
                             
                             let activityFilter = activity.activity.replace(/\s/g, "");
@@ -147,7 +162,7 @@ return (
 
 {open &&
       reviews.map((review) => {
-          console.log(review.text)
+
         return (
             
         <Review stars={review.stars} text={review.text} image={review.img} />
@@ -163,10 +178,8 @@ return (
 <Reviews />
 
 
-<p onClick={()=> setOpenForm(!openform)}>Write a review</p>
-{openform &&
     <ReviewForm id={props.id}/>
-}
+
     </div>
 
 );

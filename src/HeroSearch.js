@@ -17,117 +17,37 @@ import Search from './Search.js'
 import Icons from './Icons.js';
 import {ICONS} from './constants';
 
-const Herosearch = () => {
+const Herosearch = (props) => {
   const [title, setTitle] = useState('')
+console.log(props)
 
-  let searchTermValue = title
-  const searchTerm = () => {
-    console.log(searchTermValue)
-    
-  }
+
  
 
     return (
       
-        
+      <div className ="hero">
+      <div className ="hero-text-container">
+      <div className ="hero-text">
+      What will be your next adventure?
+      </div>
+
+      </div>
+  
+ 
 <div>
 
 <div className = "hero-subtext"> Discover Delaware’s 17 state parks or leave a review to inform other adventure seekers.</div>
 <div className="form-container">
   <div className="form-group">
-    <ul key="1">
-
-  <div className="dropdown">
-    <div className="dropbtn">
-      <div className="nav-icon-activity">
-      <img src={kayakiconwhite} className="nav-icon" alt="icon"/>
+        <input  className="form-field" type="text" placeholder="Where would you like to go?" onChange={event => props.onChange(event.target.value)}/>
+     
         </div>
-        <div className="nav-icon-caret-down">
-        <img src={caretDown} className="nav-icon" alt="icon"/>
-        </div>
-        </div>
-        
-    
-    <div className="dropdown-content">
-
-    
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={campingicon} alt="icon" /></div>Camping
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={fishingicon} alt="icon" /></div>Fishing
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon-small"><img src={geocachingicon} alt="icon" /></div>Geocaching
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon-small"><img src={hikingicon} alt="icon" /></div>Hiking
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={horsebackridingicon} alt="icon" /></div>Horseriding
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={kayakicon} alt="icon" /></div>Kayaking
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={museumicon} alt="icon" /></div>Museums
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={touricon} alt="icon" /></div>Tours
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={rockclimbingicon} alt="icon" /></div>Rockclimbing
-        </div>
-      </div>
-
-      <div className="dropdowncontentrowcontainer">
-        <div className="dropdowncontentrow">
-          <div className="dropdowncontenticon"><img src={swimmingicon} alt="icon" /></div>Swimming
-        </div>
-      </div>
     </div>
-
-    </div>
-    
-
-
-    </ul>
-        
-       
-        
-        <input  className="form-field" type="text" placeholder="Where would you like to go?" onChange={event => setTitle(event.target.value)} />
-        <input type="submit" id="inputSearch" value="Search" class="searchButton" onClick={event => searchTerm(event)}/>
         </div>
-    
-        
-        
-        
-    </div>
+
+
+
         </div>
         
     );

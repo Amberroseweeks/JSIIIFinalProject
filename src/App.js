@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Park from "./Rest";
 import Footer from "./Footer";
 import Padding from "./Padding";
+import Herosearch from "./HeroSearch";
 
 
 function App() {
-
+  const [title, setTitle] = useState('')
+  console.log(title)
+ 
+let x = 200;
 
   return (
     <div >
 <Navbar />  
  
-<Hero >
 
-
-</Hero>
+<Herosearch  onChange={value => setTitle(value)}/>
 
 
 <div className="container">
 
-<Park />
+<Park searchText={title}/>
 </div>
 <Padding />
 <Footer />
