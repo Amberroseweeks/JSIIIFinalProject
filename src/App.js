@@ -8,11 +8,18 @@ import Padding from "./Padding";
 import Herosearch from "./HeroSearch";
 
 
+
 function App() {
+
+  const [parks, setParks] = useState([])
+
+
+
+console.log(parks)
+
   const [title, setTitle] = useState('')
   console.log(title)
  
-let x = 200;
 
   return (
     <div >

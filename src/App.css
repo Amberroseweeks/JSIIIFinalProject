@@ -42,6 +42,10 @@ background: #ffffff;
 filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
+.hamburgerMenu{
+  display: block;
+}
+
 
 .activityiconbarcontainer {
   width: 100%;
@@ -78,7 +82,7 @@ filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .parkinfoiconlink:hover{
-  color: #5b8a65;
+  color: #477551;
 
 
   
@@ -172,17 +176,26 @@ background-size: cover;
       background-size: cover;
       
       }
+
+      .parkInfoHero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        
+        }
   
       
     
 
 
 .hero-text-container {
-align-content: center;
+  align-self: center;
 width: 50%;
 height: auto;
-
-
 
 
 }
@@ -937,6 +950,7 @@ label:hover {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      justify-self: center;
       align-self: center;
     align-content: center;
     width: 75%;
@@ -1190,10 +1204,10 @@ label:hover {
 
 
   .card {
-    background-color: lightblue;
-    width: 95%;
+    width: 20%;
     height: auto;
     margin: 10px;
+    align-content: center;
     background-color: #ffffff;
   
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
@@ -1436,6 +1450,10 @@ color: #c0c0c0;
     margin-left: 20px;
     
     color: #000000;
+  }
+
+  .hamburgerMenu{
+    display: block;
   }
 
 }

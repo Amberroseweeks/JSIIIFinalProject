@@ -787,42 +787,6 @@
     {
       "parkId": "3",
       "id": 9
-    },
-    {
-      "text": "It was okay!",
-      "stars": "5",
-      "image": {
-        "0": {}
-      },
-      "parkId": "1",
-      "id": 10
-    },
-    {
-      "parkId": "12",
-      "id": 11
-    },
-    {
-      "text": "It was so cool!!",
-      "stars": "3",
-      "image": {
-        "0": {}
-      },
-      "parkId": "6",
-      "id": 12
-    },
-    {
-      "text": "Okay....",
-      "stars": "1",
-      "image": {},
-      "parkId": "6",
-      "id": 13
-    },
-    {
-      "text": "Awesome!!!",
-      "stars": "5",
-      "image": {},
-      "parkId": "2",
-      "id": 14
     }
   ]
 }

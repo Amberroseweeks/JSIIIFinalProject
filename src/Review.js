@@ -5,6 +5,7 @@ import StarIcons from "./StarIcons.js";
 
 let activities = [];
 const Review = (props) =>{
+    console.log(props.stars)
     const [open, setOpen] = useState(false);
 
 

@@ -5,6 +5,14 @@ import logo from './ActivitiesIcons/Delaware-State-Parks-Search-Logo.png';
 import hamburgericon from './ActivitiesIcons/bars-solid.svg';
 
 
+let width = window.innerWidth;
+console.log(width)
+{
+  if(width < 400){
+    console.log("this works")
+  } 
+
+}
 const Navbar = () => {
   const [open, setOpen] = useState(false);
     return (
